@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F877A ]
 [d frameptr 0 ]
-"14 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X/lcd.h
+"14 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
 [v _Lcd8_Port Lcd8_Port `(v  1 e 1 0 ]
 "56
 [v _Lcd8_Cmd Lcd8_Cmd `(v  1 e 1 0 ]
@@ -21,8 +21,6 @@
 [v _Lcd4_Cmd Lcd4_Cmd `(v  1 e 1 0 ]
 "202
 [v _Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 1 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "33 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcmp.c
@@ -37,34 +35,21 @@
 [v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
 "6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eewrite.c
 [v _eeprom_write eeprom_write `(v  1 e 1 0 ]
-"50 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X\parkingCar.c
+"61 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
 [v _addNewID addNewID `(v  1 e 1 0 ]
-"74
-[v _checkID2 checkID2 `(ui  1 e 2 0 ]
-"81
+"93
 [v _timerInit timerInit `(v  1 e 1 0 ]
-"98
-[v _checkGateStatus checkGateStatus `(v  1 e 1 0 ]
-"110
+"123
 [v _main main `(v  1 e 1 0 ]
-"189
-[v _adc adc `(ui  1 e 2 0 ]
-"199
-[v _adc1 adc1 `(ui  1 e 2 0 ]
-"209
-[v _Rotation0 Rotation0 `(v  1 e 1 0 ]
-"222
-[v _Rotation90 Rotation90 `(v  1 e 1 0 ]
-[v i1_Rotation90 Rotation90 `(v  1 e 1 0 ]
-"235
-[v _ISR ISR `II(v  1 e 1 0 ]
-"250
+"251
 [v _ser_int ser_int `(v  1 e 1 0 ]
 "258
 [v _tx tx `(v  1 e 1 0 ]
-"265
+"264
 [v _rx rx `(uc  1 e 1 0 ]
-"634 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+"216 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"634
 [v _TMR1 TMR1 `VEus  1 e 2 @14 ]
 "964
 [v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
@@ -72,10 +57,6 @@
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "1066
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
-"1152
-[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
-"1159
-[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
 "1375
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
 "1437
@@ -86,34 +67,24 @@
 [v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
 "2080
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
-"2222
-[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
-"2229
-[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
 "2569
 [v _GIE GIE `VEb  1 e 0 @95 ]
-"2578
-[v _GO_nDONE GO_nDONE `VEb  1 e 0 @250 ]
 "2599
 [v _INTE INTE `VEb  1 e 0 @92 ]
 "2602
 [v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
-"2605
-[v _INTF INTF `VEb  1 e 0 @89 ]
 "2629
 [v _PEIE PEIE `VEb  1 e 0 @94 ]
 "2677
 [v _RB1 RB1 `VEb  1 e 0 @49 ]
 "2695
 [v _RB7 RB7 `VEb  1 e 0 @55 ]
+"2698
+[v _RBIE RBIE `VEb  1 e 0 @91 ]
 "2704
 [v _RC0 RC0 `VEb  1 e 0 @56 ]
 "2710
 [v _RC2 RC2 `VEb  1 e 0 @58 ]
-"2713
-[v _RC3 RC3 `VEb  1 e 0 @59 ]
-"2716
-[v _RC4 RC4 `VEb  1 e 0 @60 ]
 "2719
 [v _RC5 RC5 `VEb  1 e 0 @61 ]
 "2743
@@ -152,76 +123,42 @@
 [v _TRISA1 TRISA1 `VEb  1 e 0 @1065 ]
 "3037
 [v _TXIF TXIF `VEb  1 e 0 @100 ]
-"37 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X\parkingCar.c
-[v _counter counter `ui  1 e 2 0 ]
-"38
-[v _parkingTime parkingTime `ui  1 e 2 0 ]
-"40
+"50 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
 [v _numberID numberID `ui  1 e 2 0 ]
-"49
-[v _isOpened isOpened `ui  1 e 2 0 ]
-"110
+"123
 [v _main main `(v  1 e 1 0 ]
 {
-"145
-[v main@i_193 i `i  1 a 2 29 ]
-"130
-[v main@id id `[12]uc  1 a 12 13 ]
-"118
-[v main@val2 val2 `ui  1 a 2 27 ]
-"117
-[v main@val1 val1 `ui  1 a 2 25 ]
-"187
+"195
+[v main@i_168 i `i  1 a 2 12 ]
+"142
+[v main@id id `[12]uc  1 a 12 0 ]
+"207
 } 0
-"81
+"93
 [v _timerInit timerInit `(v  1 e 1 0 ]
 {
-"97
+"109
 } 0
-"250
+"251
 [v _ser_int ser_int `(v  1 e 1 0 ]
 {
 "256
 } 0
-"265
+"264
 [v _rx rx `(uc  1 e 1 0 ]
 {
-"270
+"268
 } 0
-"74
-[v _checkID2 checkID2 `(ui  1 e 2 0 ]
-{
-[v checkID2@id id `*.4uc  1 a 1 wreg ]
-[v checkID2@id id `*.4uc  1 a 1 wreg ]
-[v checkID2@availableID availableID `*.24ui  1 p 1 7 ]
-"76
-[v checkID2@id id `*.4uc  1 a 1 10 ]
-"80
-} 0
-"33 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcmp.c
-[v _strcmp strcmp `(i  1 e 2 0 ]
-{
-[v strcmp@s1 s1 `*.24DCuc  1 a 1 wreg ]
-"35
-[v strcmp@r r `c  1 a 1 5 ]
-"33
-[v strcmp@s1 s1 `*.24DCuc  1 a 1 wreg ]
-[v strcmp@s2 s2 `*.4DCuc  1 p 1 0 ]
-[v strcmp@s1 s1 `*.24DCuc  1 a 1 6 ]
-"42
-} 0
-"98 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X\parkingCar.c
-[v _checkGateStatus checkGateStatus `(v  1 e 1 0 ]
-{
-"109
-} 0
-"105 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X/lcd.h
+"105 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
 [v _Lcd8_Write_String Lcd8_Write_String `(v  1 e 1 0 ]
 {
+[v Lcd8_Write_String@a a `*.24uc  1 a 1 wreg ]
 "107
-[v Lcd8_Write_String@i i `i  1 a 2 9 ]
+[v Lcd8_Write_String@i i `i  1 a 2 4 ]
 "105
-[v Lcd8_Write_String@a a `*.26uc  1 p 2 4 ]
+[v Lcd8_Write_String@a a `*.24uc  1 a 1 wreg ]
+"108
+[v Lcd8_Write_String@a a `*.24uc  1 a 1 6 ]
 "110
 } 0
 "96
@@ -243,47 +180,7 @@
 [v Lcd8_Set_Cursor@a a `uc  1 a 1 5 ]
 "76
 } 0
-"199 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X\parkingCar.c
-[v _adc1 adc1 `(ui  1 e 2 0 ]
-{
-"201
-[v adc1@adcval adcval `ui  1 a 2 10 ]
-"208
-} 0
-"189
-[v _adc adc `(ui  1 e 2 0 ]
-{
-"191
-[v adc@adcval adcval `ui  1 a 2 10 ]
-"198
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-"10
-[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
-"11
-[v ___lwdiv@counter counter `uc  1 a 1 5 ]
-"5
-[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
-"30
-} 0
-"222 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X\parkingCar.c
-[v _Rotation90 Rotation90 `(v  1 e 1 0 ]
-{
-"224
-[v Rotation90@i i `ui  1 a 2 2 ]
-"233
-} 0
-"209
-[v _Rotation0 Rotation0 `(v  1 e 1 0 ]
-{
-"211
-[v Rotation0@i i `ui  1 a 2 2 ]
-"220
-} 0
-"78 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X/lcd.h
+"78
 [v _Lcd8_Init Lcd8_Init `(v  1 e 1 0 ]
 {
 "94
@@ -305,16 +202,4 @@
 "16
 [v Lcd8_Port@a a `uc  1 a 1 0 ]
 "55
-} 0
-"235 C:\Users\doank\MPLABXProjects\tuan5\parkingCar.X\parkingCar.c
-[v _ISR ISR `II(v  1 e 1 0 ]
-{
-"249
-} 0
-"222
-[v i1_Rotation90 Rotation90 `(v  1 e 1 0 ]
-{
-"224
-[v i1Rotation90@i i `ui  1 a 2 2 ]
-"233
 } 0
