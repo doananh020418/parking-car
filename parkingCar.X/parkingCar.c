@@ -10,23 +10,21 @@
 #include <pic.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
+#include "uart.h"
 
 #define delay for(i=0;i<=1000;i++)
 #define LDR1 RB6
 #define LDR2 RB5
+
 #define RS RC0
 #define EN RC2
-#define D0 RD0
-#define D1 RD1
-#define D2 RD2
-#define D3 RD3
+
 #define D4 RD4
 #define D5 RD5
 #define D6 RD6
 #define D7 RD7
-#define LED RC3
-#define LED2 RC4
+
 #define W_LED RC5
 #define servo RB1
 #define _XTAL_FREQ 16000000
@@ -45,8 +43,9 @@ unsigned int adc();
 unsigned int adc1();
 unsigned int counter = 0;
 unsigned int parkingTime = 0; // dung de ghi thoi gian xe do  
-unsigned int hold = 0;
+unsigned int park = 100;
 unsigned int numberID = 0;
+unsigned int lock = 0;
 
 void Rotation0();
 void Rotation90();
@@ -99,7 +98,7 @@ void timerInit() {
     // clear the timer1 register to start counting from 0
     TMR1 = 0;
     // Clear the timer1 clock to select bit to choose local clock source
-    TMR1CS = 0;
+    TMR1CS = 1;
     // prescale ratio 1:1
     T1CKPS0 = 0;
     T1CKPS1 = 0;
@@ -107,97 +106,82 @@ void timerInit() {
     TMR1ON = 1;
 }
 
+#define atoi(x) #x
 void checkGateStatus() {
-    Lcd8_Set_Cursor(2, 1);
-    Lcd8_Write_String("Status: ");
-    Lcd8_Set_Cursor(2, 9);
+    Lcd4_Set_Cursor(2, 0);    
     if (isOpened == 1) {
-        Lcd8_Write_String("Opened");
+        Lcd4_Write_String("Opened");
     } else {
-        Lcd8_Write_String("Closed");
+        Lcd4_Write_String("Closed");
     }
-
+    if (lock ==1){
+        Lcd4_Set_Cursor(2, 0);
+        Lcd4_Write_String("Lock!!!");
+    }
+    char string[20];
+    itoa(park,string,10);
+    Lcd4_Set_Cursor(2, 10);
+    Lcd4_Write_String(park);
 }
 
 void main() {
     timerInit();
-    //RFID_init();
+    RFID_init();
+    UART_Init(9600);
     INTEDG = 1;
-    RBIE = 1;
     INTE = 1;
     TRISB = 0b11110001;
     PORTB = 0x00;
     TRISC = 0b11000000;
     RB7 = 1;
-
+    TRISC6=TRISC7=1;
 
     TRISD = 0; //Port D is output LED
     TRISA0 = 1;
     TRISA1 = 1; //RA1 is input (ADC)
-    Lcd8_Init();
+    Lcd4_Init();
     W_LED = 0;
 
     int i;
     unsigned char id[12];
-    ser_int();
+    //ser_int();
 
-    Lcd8_Set_Cursor(1, 1);
-    Lcd8_Write_String("<<SHOW UR CARD>>");
-
+    Lcd4_Set_Cursor(1, 0);
+    Lcd4_Write_String("Wellcome!");
+    
     while (1) {
-
-        
-        //checkGateStatus();
-        //        if(LDR1==1){ //car reach the gate
-        //            LED = 1;
-        //            
-        //            // check id card ???
-        ////            for(int i=0; i<12; i++) {
-        ////                id[i]=rx();
-        ////            }
-        //            Lcd8_Set_Cursor(1,1);
-        //            //Lcd8_Write_String(id);
-        //            if(1){
-        //                parkingTime = 0;
-        //                if (isOpened == 0){ // checking if gate is opened
-        //
-        //                    Rotation90(); // open it
-        //                    isOpened = 1; // set gate status = 1
-        //                  
-        //                    if(parkingTime > 5 && LDR2 == 0){ // if gate is opened and there is no opject forward, warning if car does not move after 30s
-        //                        W_LED = 1; // warning
-        //                    }
-        //                    else{
-        //                        W_LED = 0;
-        //                    }
-        //                }
-        //            }
-        //                
-        //        }
-        //        
-        //        
-        //        if(LDR2==0){ //car moved through
-        //            
-        //            if (LDR1==1){
-        //                W_LED = 0;
-        //                if(isOpened == 1){ // check status of gate, if gate is not closed, close it
-        //                    Rotation0(); // close
-        //                    isOpened = 0;
-        //                }
-        //            }
-        //        }
-        //        
-        for(int i=0; i<12; i++) {
-            id[i]=rx();
-            //Lcd8_Write_String(id[i]);
-        }
-//        if (sizeof(id)<12){
-//            Lcd8_Set_Cursor(2,1);
-//            Lcd8_Write_String("hjhj");
-//        }
-        Lcd8_Set_Cursor(2,1);
-        Lcd8_Write_String("hjhj");
-        
+       
+       checkGateStatus(); 
+                if(LDR1==1){ //car reach the gate
+                    for(i=0; i<12; i++) {
+                        id[i]=0;
+                        id[i]=UART_Receive();
+                    }
+                  
+                    if(1){
+                        if (isOpened == 0 && lock == 0){ // checking if gate is opened
+                            Rotation90(); // open it
+                            parkingTime = 0;
+                          
+                        }
+                        if(parkingTime > 20 && LDR2 == 0){ // if gate is opened and there is no opject forward, warning if car does not move after 30s
+                                
+                                Rotation0();
+                                lock = 1;
+                            }
+                    }
+                }
+                
+                if(LDR2==1){ //car moved through
+                    
+                    if (LDR1==0){
+                        
+                        if(isOpened == 1){ // check status of gate, if gate is not closed, close it
+                            Rotation0(); // close
+                            park--;
+                        }
+                    }
+                }
     }
 }
 
@@ -212,6 +196,7 @@ void Rotation0() //0 Degree
         RB1 = 0;
         __delay_us(19100);
     }
+    isOpened = 0;
 }
 
 void Rotation90() //90 Degree
@@ -224,47 +209,23 @@ void Rotation90() //90 Degree
         RB1 = 0;
         __delay_us(18050);
     }
+    isOpened = 1;
 }
 
-//void __interrupt() ISR(void){
-//        if(INTF == 1) {
-//            Rotation90();
-//            isOpened = 1;
-//            INTF = 0;
-//        }
-//        if(TMR1IF == 1){
-//            counter ++;
-//            if(counter == 15*1){
-//                parkingTime ++;
-//                counter=0;
-//            }
-//            TMR1IF = 0;
-//        }
-//}
-
-
-
-void ser_int() {
-    TXSTA = 0x20; //BRGH=0, TXEN = 1, Asynchronous Mode, 8-bit mode
-    RCSTA = 0b10010000; //Serial Port enabled,8-bit reception
-    SPBRG = 17; //9600 baudrate for 11.0592Mhz
-    TXIF = RCIF = 0;
+void __interrupt() ISR(void){
+        if(INTF == 1) {
+            Rotation90();
+            lock = 0;
+            INTF = 0;
+        }
+        if(TMR1IF == 1){
+            counter ++;
+            if(counter == 75*1){
+                parkingTime ++;
+                counter=0;
+            }
+            TMR1IF = 0;
+        }
 }
 
-void tx(unsigned char a) {
-    TXREG = a;
-    while (!TXIF);
-    TXIF = 0;
-}
 
-unsigned char rx() {
-    while (!RCIF);
-    RCIF = 0;
-    return RCREG;
-}
-
-void txstr(unsigned char *s) {
-    while (*s) {
-        tx(*s++);
-    }
-}

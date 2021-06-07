@@ -11,26 +11,42 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\doank\AppData\Local\Temp\scecxh.o
-end_init CODE 0 0 0 3 2
+$C:\Users\doank\AppData\Local\Temp\s36sxh.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 1 2
 $dist/default/production\parkingCar.X.production.o
-cinit CODE 0 7F0 7F0 10 2
-text1 CODE 0 662 662 F 2
-text2 CODE 0 671 671 11 2
-text3 CODE 0 659 659 9 2
-text4 CODE 0 6D2 6D2 25 2
-text5 CODE 0 69C 69C 1A 2
-text6 CODE 0 6B6 6B6 1C 2
-text7 CODE 0 735 735 4E 2
-text8 CODE 0 682 682 1A 2
-text9 CODE 0 6F7 6F7 3E 2
-maintext CODE 0 783 783 6D 2
-cstackCOMMON COMMON 1 70 70 8 1
-cstackBANK0 BANK0 1 20 20 E 1
-bssBANK0 BANK0 1 2E 2E 4 1
-strings STRING 0 3 3 40 2
-bssCOMMON COMMON 1 78 78 6 1
+cinit CODE 0 F F 1A 2
+text1 CODE 0 564 564 F 2
+text2 CODE 0 17D 17D 69 2
+text3 CODE 0 4D5 4D5 2C 2
+text4 CODE 0 FC FC 81 2
+text5 CODE 0 36C 36C 3C 2
+text6 CODE 0 2A4 2A4 46 2
+text7 CODE 0 412 412 32 2
+text8 CODE 0 2EA 2EA 45 2
+text9 CODE 0 24A 24A 5A 2
+text10 CODE 0 573 573 9 2
+text11 CODE 0 551 551 13 2
+text12 CODE 0 3DF 3DF 33 2
+text13 CODE 0 444 444 31 2
+text14 CODE 0 57C 57C 7 2
+text15 CODE 0 53D 53D 14 2
+text16 CODE 0 3A8 3A8 37 2
+text17 CODE 0 1E6 1E6 64 2
+text18 CODE 0 521 521 1C 2
+text19 CODE 0 501 501 20 2
+text20 CODE 0 475 475 31 2
+text21 CODE 0 4A6 4A6 2F 2
+maintext CODE 0 29 29 D3 2
+cstackCOMMON COMMON 1 70 70 6 1
+cstackBANK0 BANK0 1 20 20 3F 1
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 5F 5F 6 1
+idataBANK0 CODE 0 583 583 2 2
+strings STRING 0 32F 32F 3D 2
+dataBANK0 BANK0 1 65 65 2 1
+bssCOMMON COMMON 1 76 76 4 1
 config CONFIG 4 2007 2007 1 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -38,31 +54,32 @@ config CONFIG 4 2007 2007 1 2
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 32-6F 1
+RAM 67-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 32-6F 1
+BANK0 67-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 43-658 2
-CONST 800-1FFF 2
-ENTRY 43-658 2
-ENTRY 800-1FFF 2
+CONST 3-3 2
+CONST 585-1FFF 2
+ENTRY 3-3 2
+ENTRY 585-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 43-658 2
-CODE 800-1FFF 2
+CODE 3-3 2
+CODE 585-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
+COMMON 7A-7D 1
 EEDATA 2100-21FF 2
-STRCODE 43-658 2
-STRCODE 800-1FFF 2
-STRING 43-658 2
-STRING 800-1FFF 2
+STRCODE 3-3 2
+STRCODE 585-1FFF 2
+STRING 3-3 2
+STRING 585-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -77,139 +94,275 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\parkingCar.X.production.o
-7F0 cinit CODE >771:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F0 cinit CODE >774:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F0 cinit CODE >800:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F1 cinit CODE >801:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F2 cinit CODE >802:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F3 cinit CODE >803:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F4 cinit CODE >804:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F5 cinit CODE >805:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F6 cinit CODE >808:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F7 cinit CODE >809:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F8 cinit CODE >810:C:\Users\doank\AppData\Local\Temp\scecx.s
-7F9 cinit CODE >811:C:\Users\doank\AppData\Local\Temp\scecx.s
-7FA cinit CODE >812:C:\Users\doank\AppData\Local\Temp\scecx.s
-7FB cinit CODE >813:C:\Users\doank\AppData\Local\Temp\scecx.s
-7FC cinit CODE >819:C:\Users\doank\AppData\Local\Temp\scecx.s
-7FC cinit CODE >821:C:\Users\doank\AppData\Local\Temp\scecx.s
-7FD cinit CODE >822:C:\Users\doank\AppData\Local\Temp\scecx.s
-6F7 text9 CODE >14:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6F8 text9 CODE >16:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6FC text9 CODE >17:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-700 text9 CODE >18:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-700 text9 CODE >19:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-703 text9 CODE >21:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-707 text9 CODE >22:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-709 text9 CODE >23:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-709 text9 CODE >24:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-70A text9 CODE >26:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-70E text9 CODE >27:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-710 text9 CODE >28:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-710 text9 CODE >29:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-711 text9 CODE >31:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-715 text9 CODE >32:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-717 text9 CODE >33:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-717 text9 CODE >34:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-718 text9 CODE >36:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-71C text9 CODE >37:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-71E text9 CODE >38:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-71E text9 CODE >39:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-71F text9 CODE >41:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-723 text9 CODE >42:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-725 text9 CODE >43:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-725 text9 CODE >44:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-726 text9 CODE >46:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-72A text9 CODE >47:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-72C text9 CODE >48:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-72C text9 CODE >49:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-72D text9 CODE >51:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-731 text9 CODE >52:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-733 text9 CODE >53:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-733 text9 CODE >54:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-734 text9 CODE >55:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-682 text8 CODE >56:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-683 text8 CODE >58:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-686 text8 CODE >59:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-68C text8 CODE >60:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-68F text8 CODE >61:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-698 text8 CODE >62:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-69B text8 CODE >63:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-735 text7 CODE >78:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-735 text7 CODE >80:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-73B text7 CODE >81:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-73E text7 CODE >82:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-747 text7 CODE >84:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-74D text7 CODE >85:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-756 text7 CODE >86:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-75C text7 CODE >87:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-764 text7 CODE >88:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-76A text7 CODE >90:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-770 text7 CODE >91:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-776 text7 CODE >92:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-77C text7 CODE >93:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-782 text7 CODE >94:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6B6 text6 CODE >70:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6B7 text6 CODE >72:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6BC text6 CODE >73:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6C4 text6 CODE >74:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6CA text6 CODE >75:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6D1 text6 CODE >76:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-69C text5 CODE >96:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-69D text5 CODE >98:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6A0 text5 CODE >99:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6A6 text5 CODE >100:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6A9 text5 CODE >101:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6B2 text5 CODE >102:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6B5 text5 CODE >103:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6D2 text4 CODE >105:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6D3 text4 CODE >108:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6D6 text4 CODE >109:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-6F6 text4 CODE >110:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-659 text3 CODE >264:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-659 text3 CODE >265:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-65F text3 CODE >266:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-660 text3 CODE >267:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-661 text3 CODE >268:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-671 text2 CODE >251:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-671 text2 CODE >252:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-675 text2 CODE >253:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-679 text2 CODE >254:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-67D text2 CODE >255:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-681 text2 CODE >256:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-662 text1 CODE >93:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-662 text1 CODE >94:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-665 text1 CODE >95:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-668 text1 CODE >96:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-669 text1 CODE >97:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-66A text1 CODE >101:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-66C text1 CODE >103:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-66D text1 CODE >105:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-66E text1 CODE >106:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-66F text1 CODE >108:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-670 text1 CODE >109:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-783 maintext CODE >123:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-783 maintext CODE >124:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-788 maintext CODE >126:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-78B maintext CODE >127:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-78C maintext CODE >128:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-78D maintext CODE >129:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-78F maintext CODE >130:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-792 maintext CODE >131:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-796 maintext CODE >132:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-799 maintext CODE >135:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-79C maintext CODE >136:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-79D maintext CODE >137:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-79E maintext CODE >138:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7A3 maintext CODE >139:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7A6 maintext CODE >143:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7AB maintext CODE >145:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7B3 maintext CODE >146:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7B9 maintext CODE >195:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7BD maintext CODE >196:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7CB maintext CODE >198:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7DE maintext CODE >203:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
-7E6 maintext CODE >204:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+F cinit CODE >818:C:\Users\doank\AppData\Local\Temp\s36sx.s
+F cinit CODE >821:C:\Users\doank\AppData\Local\Temp\s36sx.s
+F cinit CODE >856:C:\Users\doank\AppData\Local\Temp\s36sx.s
+14 cinit CODE >857:C:\Users\doank\AppData\Local\Temp\s36sx.s
+15 cinit CODE >858:C:\Users\doank\AppData\Local\Temp\s36sx.s
+1A cinit CODE >859:C:\Users\doank\AppData\Local\Temp\s36sx.s
+1B cinit CODE >863:C:\Users\doank\AppData\Local\Temp\s36sx.s
+1C cinit CODE >864:C:\Users\doank\AppData\Local\Temp\s36sx.s
+1D cinit CODE >865:C:\Users\doank\AppData\Local\Temp\s36sx.s
+1E cinit CODE >866:C:\Users\doank\AppData\Local\Temp\s36sx.s
+1F cinit CODE >867:C:\Users\doank\AppData\Local\Temp\s36sx.s
+20 cinit CODE >868:C:\Users\doank\AppData\Local\Temp\s36sx.s
+21 cinit CODE >871:C:\Users\doank\AppData\Local\Temp\s36sx.s
+22 cinit CODE >872:C:\Users\doank\AppData\Local\Temp\s36sx.s
+23 cinit CODE >873:C:\Users\doank\AppData\Local\Temp\s36sx.s
+24 cinit CODE >874:C:\Users\doank\AppData\Local\Temp\s36sx.s
+25 cinit CODE >880:C:\Users\doank\AppData\Local\Temp\s36sx.s
+25 cinit CODE >882:C:\Users\doank\AppData\Local\Temp\s36sx.s
+26 cinit CODE >883:C:\Users\doank\AppData\Local\Temp\s36sx.s
+4 intentry CODE >215:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4A6 text21 CODE >202:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4A6 text21 CODE >205:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4A8 text21 CODE >207:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4AB text21 CODE >208:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4B4 text21 CODE >209:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4B7 text21 CODE >210:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4BF text21 CODE >211:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4CE text21 CODE >212:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4D4 text21 CODE >213:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+475 text20 CODE >215:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+475 text20 CODE >216:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+479 text20 CODE >217:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+47E text20 CODE >218:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+482 text20 CODE >219:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+483 text20 CODE >221:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+489 text20 CODE >222:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+48F text20 CODE >223:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+496 text20 CODE >224:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+49C text20 CODE >225:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+49E text20 CODE >227:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+49F text20 CODE >229:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+501 text19 CODE >125:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+504 text19 CODE >127:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+508 text19 CODE >128:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+50A text19 CODE >129:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+50A text19 CODE >130:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+50B text19 CODE >132:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+50F text19 CODE >133:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+511 text19 CODE >134:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+511 text19 CODE >135:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+512 text19 CODE >137:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+516 text19 CODE >138:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+518 text19 CODE >139:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+518 text19 CODE >140:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+519 text19 CODE >142:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+51D text19 CODE >143:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+51F text19 CODE >144:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+51F text19 CODE >145:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+520 text19 CODE >146:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+521 text18 CODE >147:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+524 text18 CODE >149:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+525 text18 CODE >150:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+52B text18 CODE >151:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+52E text18 CODE >152:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+539 text18 CODE >153:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+53C text18 CODE >154:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+1E6 text17 CODE >183:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+1E6 text17 CODE >185:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+1EC text17 CODE >186:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+1F7 text17 CODE >187:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+1FD text17 CODE >188:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+208 text17 CODE >189:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+20E text17 CODE >190:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+219 text17 CODE >191:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+21F text17 CODE >193:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+225 text17 CODE >194:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+22B text17 CODE >195:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+231 text17 CODE >196:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+237 text17 CODE >197:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+23D text17 CODE >198:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+243 text17 CODE >199:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+249 text17 CODE >200:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+3A8 text16 CODE >6:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eewrite.c
+3AB text16 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eewrite.c
+3DE text16 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eewrite.c
+53D text15 CODE >59:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+540 text15 CODE >60:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+54A text15 CODE >61:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+550 text15 CODE >62:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+57C text14 CODE >64:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+57C text14 CODE >65:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+582 text14 CODE >66:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+444 text13 CODE >189:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+444 text13 CODE >192:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+448 text13 CODE >194:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+449 text13 CODE >195:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+453 text13 CODE >196:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+456 text13 CODE >197:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+461 text13 CODE >198:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+472 text13 CODE >199:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+474 text13 CODE >200:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3DF text12 CODE >202:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3DF text12 CODE >205:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3E3 text12 CODE >207:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3E4 text12 CODE >208:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3EE text12 CODE >209:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3F1 text12 CODE >210:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3FC text12 CODE >211:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+40D text12 CODE >212:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+411 text12 CODE >213:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+551 text11 CODE >1:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+551 text11 CODE >3:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+554 text11 CODE >4:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+556 text11 CODE >6:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+557 text11 CODE >7:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+55A text11 CODE >9:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+55D text11 CODE >10:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+55E text11 CODE >12:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+55F text11 CODE >13:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+560 text11 CODE >15:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+563 text11 CODE >16:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+573 text10 CODE >19:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+573 text10 CODE >20:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+579 text10 CODE >21:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+57A text10 CODE >22:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+57B text10 CODE >23:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+24A text9 CODE >162:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+24D text9 CODE >165:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+252 text9 CODE >167:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+257 text9 CODE >168:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+263 text9 CODE >169:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+269 text9 CODE >170:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+26F text9 CODE >171:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+277 text9 CODE >172:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+278 text9 CODE >173:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+27E text9 CODE >175:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+283 text9 CODE >176:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+28F text9 CODE >177:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+295 text9 CODE >178:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+29B text9 CODE >179:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2A3 text9 CODE >181:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2EA text8 CODE >202:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2ED text8 CODE >205:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2F2 text8 CODE >206:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2F7 text8 CODE >207:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2F8 text8 CODE >208:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+306 text8 CODE >209:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+309 text8 CODE >210:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+314 text8 CODE >211:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+317 text8 CODE >212:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+31D text8 CODE >213:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+320 text8 CODE >214:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+32B text8 CODE >215:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+32E text8 CODE >216:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+412 text7 CODE >218:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+412 text7 CODE >221:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+417 text7 CODE >222:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+443 text7 CODE >223:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+2A4 text6 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2A4 text6 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2A8 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2AE text6 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2B0 text6 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2B1 text6 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2B8 text6 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2BC text6 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2C0 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2C7 text6 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D1 text6 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D7 text6 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2D8 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2DF text6 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2E5 text6 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+2E9 text6 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+36C text5 CODE >5:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+36C text5 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+374 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+376 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+377 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+37E text5 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+382 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+386 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+390 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+396 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+39D text5 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+3A3 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+3A7 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+FC text4 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+FC text4 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+102 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+115 text4 CODE >25:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+11B text4 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+121 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+12D text4 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+140 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+153 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+159 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+15D text4 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+161 text4 CODE >34:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+170 text4 CODE >35:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+176 text4 CODE >36:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+17C text4 CODE >37:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+4D5 text3 CODE >4:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+4D5 text3 CODE >6:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+4D5 text3 CODE >8:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+4DB text3 CODE >9:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+4EA text3 CODE >10:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+4EF text3 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+500 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+17D text2 CODE >110:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+17D text2 CODE >111:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+186 text2 CODE >112:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+18E text2 CODE >113:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+197 text2 CODE >114:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+198 text2 CODE >115:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1A1 text2 CODE >117:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1A9 text2 CODE >118:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1B0 text2 CODE >119:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1BB text2 CODE >122:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1CE text2 CODE >123:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1DA text2 CODE >124:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+1E5 text2 CODE >125:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+564 text1 CODE >91:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+564 text1 CODE >92:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+567 text1 CODE >93:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+56A text1 CODE >94:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+56B text1 CODE >95:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+56C text1 CODE >99:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+56E text1 CODE >101:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+56F text1 CODE >103:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+570 text1 CODE >104:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+571 text1 CODE >106:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+572 text1 CODE >107:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+29 maintext CODE >127:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+29 maintext CODE >128:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+2E maintext CODE >129:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+33 maintext CODE >130:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+3E maintext CODE >131:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+41 maintext CODE >132:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+42 maintext CODE >133:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+44 maintext CODE >134:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+47 maintext CODE >135:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4B maintext CODE >136:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+4E maintext CODE >137:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+5B maintext CODE >139:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+5C maintext CODE >140:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+5D maintext CODE >141:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+5E maintext CODE >142:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+63 maintext CODE >143:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+66 maintext CODE >149:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+6D maintext CODE >150:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+78 maintext CODE >154:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+7D maintext CODE >155:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+83 maintext CODE >156:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+85 maintext CODE >157:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+8C maintext CODE >158:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+9A maintext CODE >159:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+AD maintext CODE >162:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+BB maintext CODE >163:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+C0 maintext CODE >164:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+C4 maintext CODE >167:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+D1 maintext CODE >169:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+D6 maintext CODE >170:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+DC maintext CODE >175:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+E0 maintext CODE >177:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+E4 maintext CODE >179:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+EA maintext CODE >180:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+EF maintext CODE >181:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+F8 maintext CODE >184:C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -223,60 +376,99 @@ $dist/default/production\parkingCar.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_Lcd8_Cmd D04 0 CODE 0 text8 dist/default/production\parkingCar.X.production.o
-__Hspace_0 800 0 ABS 0 - -
-__Hspace_1 7E 0 ABS 0 - -
+___lwmod@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+_Lcd4_Cmd A42 0 CODE 0 text18 dist/default/production\parkingCar.X.production.o
+__Hspace_0 585 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
-__size_of_Lcd8_Write_Char 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_Lcd4_Cmd A7A 0 CODE 0 text18 dist/default/production\parkingCar.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_Lcd8_Cmd D38 0 CODE 0 text8 dist/default/production\parkingCar.X.production.o
-_rx CB2 0 CODE 0 text3 dist/default/production\parkingCar.X.production.o
+__size_ofi1_Rotation90 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+main@i 5D 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 __Hstrings 0 0 ABS 0 strings -
+itoa@base 36 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+_BRGH 4C2 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_CREN C4 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _INTE 5C 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_INTF 59 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_RBIE 5B 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_RCIE 465 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RCIF 65 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_SPEN C7 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_SYNC 4C4 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TMR1 E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_TXIF 64 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\doank\AppData\Local\Temp\scecxh.o
-_main F06 0 CODE 0 maintext dist/default/production\parkingCar.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\doank\AppData\Local\Temp\s36sxh.o
+_itoa 9AA 0 CODE 0 text3 dist/default/production\parkingCar.X.production.o
+_lock 61 0 BANK0 1 bssBANK0 dist/default/production\parkingCar.X.production.o
+_main 52 0 CODE 0 maintext dist/default/production\parkingCar.X.production.o
+_park 65 0 BANK0 1 dataBANK0 dist/default/production\parkingCar.X.production.o
+_utoa 1F8 0 CODE 0 text4 dist/default/production\parkingCar.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-start 0 0 CODE 0 init C:\Users\doank\AppData\Local\Temp\scecxh.o
-__end_of_timerInit CE2 0 CODE 0 text1 dist/default/production\parkingCar.X.production.o
+start 18 0 CODE 0 init C:\Users\doank\AppData\Local\Temp\s36sxh.o
+__end_of_timerInit AE6 0 CODE 0 text1 dist/default/production\parkingCar.X.production.o
+__size_of_itoa 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of_utoa 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_Lcd4_Write_Char 5D4 0 CODE 0 text8 dist/default/production\parkingCar.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_timerInit 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-__end_of_Lcd8_Write_String DEE 0 CODE 0 text4 dist/default/production\parkingCar.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-_timerInit CC4 0 CODE 0 text1 dist/default/production\parkingCar.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\scecxh.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\scecxh.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\scecxh.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\scecxh.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\scecxh.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\scecxh.o
+__end_ofi1_Rotation90 9AA 0 CODE 0 text21 dist/default/production\parkingCar.X.production.o
+_timerInit AC8 0 CODE 0 text1 dist/default/production\parkingCar.X.production.o
+utoa@c 31 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+utoa@v 2F 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__size_of_checkGateStatus 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\s36sxh.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\s36sxh.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\s36sxh.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\s36sxh.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\s36sxh.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\doank\AppData\Local\Temp\s36sxh.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-__size_of_ser_int 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
+__end_of_Lcd4_Write_String 888 0 CODE 0 text7 dist/default/production\parkingCar.X.production.o
+__end_of_RFID_init B06 0 CODE 0 text14 dist/default/production\parkingCar.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-__end_of_Lcd8_Init F06 0 CODE 0 text7 dist/default/production\parkingCar.X.production.o
-__end_of_Lcd8_Port E6A 0 CODE 0 text9 dist/default/production\parkingCar.X.production.o
-__size_of_Lcd8_Init 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-__size_of_Lcd8_Port 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__end_of_Lcd4_Init 494 0 CODE 0 text17 dist/default/production\parkingCar.X.production.o
+__end_of_Lcd4_Port A42 0 CODE 0 text19 dist/default/production\parkingCar.X.production.o
+__size_of_RFID_init 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of_Lcd4_Init 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of_Lcd4_Port 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__end_of_Rotation0 8EA 0 CODE 0 text13 dist/default/production\parkingCar.X.production.o
+_EECON1bits 18C 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of_Rotation0 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_RFID_init AF8 0 CODE 0 text14 dist/default/production\parkingCar.X.production.o
+_Lcd4_Init 3CC 0 CODE 0 text17 dist/default/production\parkingCar.X.production.o
+_Lcd4_Port A02 0 CODE 0 text19 dist/default/production\parkingCar.X.production.o
+_EECON1 18C 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-_Lcd8_Init E6A 0 CODE 0 text7 dist/default/production\parkingCar.X.production.o
-_Lcd8_Port DEE 0 CODE 0 text9 dist/default/production\parkingCar.X.production.o
-_Lcd8_Write_String DA4 0 CODE 0 text4 dist/default/production\parkingCar.X.production.o
+___lwmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__end_of___lwdiv 5D4 0 CODE 0 text6 dist/default/production\parkingCar.X.production.o
+__end_of___lwmod 750 0 CODE 0 text5 dist/default/production\parkingCar.X.production.o
+_Rotation0 888 0 CODE 0 text13 dist/default/production\parkingCar.X.production.o
+eeprom_write@addr 22 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__size_of_Lcd4_Write_Char 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+Lcd4_Cmd@a 23 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 _INTEDG 40E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\doank\AppData\Local\Temp\scecxh.o
-___stacklo 0 0 ABS 0 - C:\Users\doank\AppData\Local\Temp\scecxh.o
-__end_of_Lcd8_Set_Cursor DA4 0 CODE 0 text6 dist/default/production\parkingCar.X.production.o
-start_initialization FE0 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
-__end_of_ser_int D04 0 CODE 0 text2 dist/default/production\parkingCar.X.production.o
-__end_of_rx CC4 0 CODE 0 text3 dist/default/production\parkingCar.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\doank\AppData\Local\Temp\s36sxh.o
+___stacklo 0 0 ABS 0 - C:\Users\doank\AppData\Local\Temp\s36sxh.o
+___lwdiv@quotient 26 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+itoa@buf 32 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+itoa@val 34 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+___lwmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
+_Lcd4_Write_String 824 0 CODE 0 text7 dist/default/production\parkingCar.X.production.o
+?_UART_Init 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 _TMR1CS 81 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TMR1IE 460 0 ABS 0 - dist/default/production\parkingCar.X.production.o
@@ -284,28 +476,35 @@ _TMR1IF 60 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TMR1ON 80 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TRISA0 428 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TRISA1 429 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_Lcd8_Set_Cursor D6C 0 CODE 0 text6 dist/default/production\parkingCar.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\doank\AppData\Local\Temp\scecxh.o
+_TRISC6 43E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_TRISC7 43F 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+utoa@buf 28 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+utoa@val 2A 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\doank\AppData\Local\Temp\s36sxh.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
-__Hcinit 1000 0 CODE 0 cinit -
+_isOpened 5F 0 BANK0 1 bssBANK0 dist/default/production\parkingCar.X.production.o
+__Hcinit 52 0 CODE 0 cinit -
 __Hstack 0 0 STACK 2 stack -
-__stringbase 10 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+__stringbase 67C 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+___lwdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
+Lcd4_Write_Char@temp 23 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4010 0 CONFIG 4 config -
+addNewID@newID 24 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
 __Lbank3 0 0 ABS 0 bank3 -
-__Lcinit FE0 0 CODE 0 cinit -
+__Lcinit 1E 0 CODE 0 cinit -
 __Lstack 0 0 STACK 2 stack -
-__size_of_rx 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
-__Hinit 0 0 CODE 0 init -
+__Hinit 18 0 CODE 0 init -
 __Hsfr0 0 0 ABS 0 sfr0 -
 __Hsfr1 0 0 ABS 0 sfr1 -
 __Hsfr2 0 0 ABS 0 sfr2 -
@@ -313,104 +512,161 @@ __Hsfr3 0 0 ABS 0 sfr3 -
 __Htext 0 0 ABS 0 text -
 __Labs1 0 0 ABS 0 abs1 -
 __Lcode 0 0 ABS 0 code -
-__Linit 0 0 CODE 0 init -
+__Linit 18 0 CODE 0 init -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-Lcd8_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _GIE 5F 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_ISR 8EA 0 CODE 0 text20 dist/default/production\parkingCar.X.production.o
+_RB0 30 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RB1 31 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_RB2 32 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_RB3 33 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_RB5 35 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_RB6 36 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RB7 37 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RC0 38 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RC2 3A 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RC5 3D 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_RD0 40 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_RD1 41 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_RD2 42 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_RD3 43 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RD4 44 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RD5 45 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RD6 46 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RD7 47 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-__S0 800 0 ABS 0 - -
-__S1 7E 0 ABS 0 - -
+__S0 585 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__Lintentry 0 0 CODE 0 intentry -
-__stringtab 6 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\doank\AppData\Local\Temp\scecxh.o
+Rotation90@i 22 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__end_of_Lcd4_Set_Cursor 548 0 CODE 0 text9 dist/default/production\parkingCar.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+utoa@base 2C 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+_Rotation90 7BE 0 CODE 0 text12 dist/default/production\parkingCar.X.production.o
+__end_of_ISR 94C 0 CODE 0 text20 dist/default/production\parkingCar.X.production.o
+eeprom_write@value 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 65E 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+Rotation0@i 22 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\doank\AppData\Local\Temp\s36sxh.o
+_eeprom_write 750 0 CODE 0 text16 dist/default/production\parkingCar.X.production.o
+Lcd4_Write_String@a 26 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+Lcd4_Write_String@i 28 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__size_of_addNewID 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__pdataBANK0 65 0 BANK0 1 dataBANK0 dist/default/production\parkingCar.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-__size_of_Lcd8_Set_Cursor 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-Lcd8_Port@a 70 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
-Lcd8_Set_Cursor@a 75 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
-Lcd8_Set_Cursor@b 74 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
-__pmaintext F06 0 CODE 0 maintext dist/default/production\parkingCar.X.production.o
+__ptext10 AE6 0 CODE 0 text10 dist/default/production\parkingCar.X.production.o
+__ptext11 AA2 0 CODE 0 text11 dist/default/production\parkingCar.X.production.o
+__ptext12 7BE 0 CODE 0 text12 dist/default/production\parkingCar.X.production.o
+__ptext13 888 0 CODE 0 text13 dist/default/production\parkingCar.X.production.o
+__ptext14 AF8 0 CODE 0 text14 dist/default/production\parkingCar.X.production.o
+__ptext15 A7A 0 CODE 0 text15 dist/default/production\parkingCar.X.production.o
+__ptext16 750 0 CODE 0 text16 dist/default/production\parkingCar.X.production.o
+__ptext17 3CC 0 CODE 0 text17 dist/default/production\parkingCar.X.production.o
+__ptext18 A42 0 CODE 0 text18 dist/default/production\parkingCar.X.production.o
+__ptext19 A02 0 CODE 0 text19 dist/default/production\parkingCar.X.production.o
+__ptext20 8EA 0 CODE 0 text20 dist/default/production\parkingCar.X.production.o
+__ptext21 94C 0 CODE 0 text21 dist/default/production\parkingCar.X.production.o
+_parkingTime 63 0 BANK0 1 bssBANK0 dist/default/production\parkingCar.X.production.o
+___lwdiv 548 0 CODE 0 text6 dist/default/production\parkingCar.X.production.o
+___lwmod 6D8 0 CODE 0 text5 dist/default/production\parkingCar.X.production.o
+__pmaintext 52 0 CODE 0 maintext dist/default/production\parkingCar.X.production.o
+_Lcd4_Set_Cursor 494 0 CODE 0 text9 dist/default/production\parkingCar.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-main@i_168 2C 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
-_ser_int CE2 0 CODE 0 text2 dist/default/production\parkingCar.X.production.o
-__end_of__stringtab 12 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+Lcd4_Set_Cursor@temp 28 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__end_of_Rotation90 824 0 CODE 0 text12 dist/default/production\parkingCar.X.production.o
+___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+Lcd4_Set_Cursor@a 27 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+Lcd4_Set_Cursor@b 24 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+Lcd4_Set_Cursor@y 2A 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+Lcd4_Set_Cursor@z 29 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+i1Rotation90@i 72 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
+__end_of__stringtab 67E 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+_addNewID A7A 0 CODE 0 text15 dist/default/production\parkingCar.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-main@id 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
-__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\parkingCar.X.production.o
+main@id 51 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/default/production\parkingCar.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
-__Lend_init 0 0 CODE 0 end_init -
+__Lend_init 18 0 CODE 0 end_init -
+checkGateStatus@string 3C 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__end_of_Lcd8_Write_Char D6C 0 CODE 0 text5 dist/default/production\parkingCar.X.production.o
-end_of_initialization FF8 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
-__Hintentry 0 0 CODE 0 intentry -
+__end_of_eeprom_write 7BE 0 CODE 0 text16 dist/default/production\parkingCar.X.production.o
+__end_of_addNewID AA2 0 CODE 0 text15 dist/default/production\parkingCar.X.production.o
+end_of_initialization 4A 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
-__Hreset_vec 0 0 CODE 0 reset_vec -
+___lwdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+?___lwmod 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-Lcd8_Write_String@a 76 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
-Lcd8_Write_String@i 74 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
-__ptext1 CC4 0 CODE 0 text1 dist/default/production\parkingCar.X.production.o
-__ptext2 CE2 0 CODE 0 text2 dist/default/production\parkingCar.X.production.o
-__ptext3 CB2 0 CODE 0 text3 dist/default/production\parkingCar.X.production.o
-__ptext4 DA4 0 CODE 0 text4 dist/default/production\parkingCar.X.production.o
-__ptext5 D38 0 CODE 0 text5 dist/default/production\parkingCar.X.production.o
-__ptext6 D6C 0 CODE 0 text6 dist/default/production\parkingCar.X.production.o
-__ptext7 E6A 0 CODE 0 text7 dist/default/production\parkingCar.X.production.o
-__ptext8 D04 0 CODE 0 text8 dist/default/production\parkingCar.X.production.o
-__ptext9 DEE 0 CODE 0 text9 dist/default/production\parkingCar.X.production.o
+__end_of_UART_Init AC8 0 CODE 0 text11 dist/default/production\parkingCar.X.production.o
+__size_of_UART_Init 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__ptext1 AC8 0 CODE 0 text1 dist/default/production\parkingCar.X.production.o
+__ptext2 2FA 0 CODE 0 text2 dist/default/production\parkingCar.X.production.o
+__ptext3 9AA 0 CODE 0 text3 dist/default/production\parkingCar.X.production.o
+__ptext4 1F8 0 CODE 0 text4 dist/default/production\parkingCar.X.production.o
+__ptext5 6D8 0 CODE 0 text5 dist/default/production\parkingCar.X.production.o
+__ptext6 548 0 CODE 0 text6 dist/default/production\parkingCar.X.production.o
+__ptext7 824 0 CODE 0 text7 dist/default/production\parkingCar.X.production.o
+__ptext8 5D4 0 CODE 0 text8 dist/default/production\parkingCar.X.production.o
+__ptext9 494 0 CODE 0 text9 dist/default/production\parkingCar.X.production.o
+_UART_Receive AE6 0 CODE 0 text10 dist/default/production\parkingCar.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_Lcd4_Set_Cursor 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_Lcd8_Write_Char D38 0 CODE 0 text5 dist/default/production\parkingCar.X.production.o
-__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
+_UART_Init AA2 0 CODE 0 text11 dist/default/production\parkingCar.X.production.o
+__end_of_checkGateStatus 3CC 0 CODE 0 text2 dist/default/production\parkingCar.X.production.o
+__end_of__initialization 4A 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-__size_of_Lcd8_Write_String 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-Lcd8_Write_Char@a 73 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
+__pidataBANK0 B06 0 CODE 0 idataBANK0 dist/default/production\parkingCar.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 _T1CKPS0 84 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _T1CKPS1 85 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\parkingCar.X.production.o
-__size_of_Lcd8_Cmd 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_numberID 78 0 COMMON 1 bssCOMMON dist/default/production\parkingCar.X.production.o
-__Hend_init 6 0 CODE 0 end_init -
-__end_of_main FE0 0 CODE 0 maintext dist/default/production\parkingCar.X.production.o
+__size_of_Lcd4_Cmd 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__size_of_UART_Receive 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_numberID 76 0 COMMON 1 bssCOMMON dist/default/production\parkingCar.X.production.o
+Lcd4_Port@a 20 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+__end_of_itoa A02 0 CODE 0 text3 dist/default/production\parkingCar.X.production.o
+__end_of_main 1F8 0 CODE 0 maintext dist/default/production\parkingCar.X.production.o
+__end_of_utoa 2FA 0 CODE 0 text4 dist/default/production\parkingCar.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _RCREG 1A 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_RCSTA 18 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _SPBRG 99 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TRISC 87 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_TXREG 19 0 ABS 0 - dist/default/production\parkingCar.X.production.o
-_TXSTA 98 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__initialization FE0 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
-__pbssBANK0 2E 0 BANK0 1 bssBANK0 dist/default/production\parkingCar.X.production.o
-__pstrings 6 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\parkingCar.X.production.o
+__size_of_Lcd4_Write_String 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+Lcd4_Write_Char@a 25 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+Lcd4_Write_Char@y 24 0 BANK0 1 cstackBANK0 dist/default/production\parkingCar.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\parkingCar.X.production.o
+__size_of_ISR 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+_checkGateStatus 2FA 0 CODE 0 text2 dist/default/production\parkingCar.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__end_of_UART_Receive AF8 0 CODE 0 text10 dist/default/production\parkingCar.X.production.o
+i1_Rotation90 94C 0 CODE 0 text21 dist/default/production\parkingCar.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\parkingCar.X.production.o
+__end_of_Lcd4_Write_Char 65E 0 CODE 0 text8 dist/default/production\parkingCar.X.production.o
+__pbssBANK0 5F 0 BANK0 1 bssBANK0 dist/default/production\parkingCar.X.production.o
+__size_of_Rotation90 0 0 ABS 0 - dist/default/production\parkingCar.X.production.o
+__pstrings 65E 0 STRING 0 strings dist/default/production\parkingCar.X.production.o
+_counter 78 0 COMMON 1 bssCOMMON dist/default/production\parkingCar.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production\parkingCar.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -436,21 +692,12 @@ __pstrings 6 0 STRING 0 strings dist/default/production\parkingCar.X.production.
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7F0 FE0 10 2
-text1 0 662 CC4 F 2
-text2 0 671 CE2 11 2
-text3 0 659 CB2 9 2
-text4 0 6D2 DA4 25 2
-text5 0 69C D38 1A 2
-text6 0 6B6 D6C 1C 2
-text7 0 735 E6A 4E 2
-text8 0 682 D04 1A 2
-text9 0 6F7 DEE 3E 2
-maintext 0 783 F06 6D 2
-cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 12 1
+text5 0 36C 6D8 219 2
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 47 1
+intentry 0 4 8 32B 2
 reset_vec 0 0 0 3 2
-strings 0 3 6 40 2
+strings 0 32F 65E 3D 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

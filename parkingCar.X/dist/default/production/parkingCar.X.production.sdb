@@ -7,20 +7,32 @@
 [v _Lcd8_Port Lcd8_Port `(v  1 e 1 0 ]
 "56
 [v _Lcd8_Cmd Lcd8_Cmd `(v  1 e 1 0 ]
-"70
-[v _Lcd8_Set_Cursor Lcd8_Set_Cursor `(v  1 e 1 0 ]
-"78
-[v _Lcd8_Init Lcd8_Init `(v  1 e 1 0 ]
 "96
 [v _Lcd8_Write_Char Lcd8_Write_Char `(v  1 e 1 0 ]
-"105
-[v _Lcd8_Write_String Lcd8_Write_String `(v  1 e 1 0 ]
 "125
 [v _Lcd4_Port Lcd4_Port `(v  1 e 1 0 ]
 "147
 [v _Lcd4_Cmd Lcd4_Cmd `(v  1 e 1 0 ]
+"162
+[v _Lcd4_Set_Cursor Lcd4_Set_Cursor `(v  1 e 1 0 ]
+"183
+[v _Lcd4_Init Lcd4_Init `(v  1 e 1 0 ]
 "202
 [v _Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 1 0 ]
+"218
+[v _Lcd4_Write_String Lcd4_Write_String `(v  1 e 1 0 ]
+"1 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"19
+[v _UART_Receive UART_Receive `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+[v _itoa itoa `(*.39uc  1 e 1 0 ]
+"17
+[v _utoa utoa `(*.39uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "33 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\strcmp.c
@@ -35,26 +47,63 @@
 [v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
 "6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eewrite.c
 [v _eeprom_write eeprom_write `(v  1 e 1 0 ]
-"61 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+"59 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
 [v _addNewID addNewID `(v  1 e 1 0 ]
-"93
+"64
+[v _RFID_init RFID_init `(v  1 e 1 0 ]
+"91
 [v _timerInit timerInit `(v  1 e 1 0 ]
-"123
+"110
+[v _checkGateStatus checkGateStatus `(v  1 e 1 0 ]
+"127
 [v _main main `(v  1 e 1 0 ]
-"251
-[v _ser_int ser_int `(v  1 e 1 0 ]
-"258
-[v _tx tx `(v  1 e 1 0 ]
-"264
-[v _rx rx `(uc  1 e 1 0 ]
-"216 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+"189
+[v _Rotation0 Rotation0 `(v  1 e 1 0 ]
+"202
+[v _Rotation90 Rotation90 `(v  1 e 1 0 ]
+[v i1_Rotation90 Rotation90 `(v  1 e 1 0 ]
+"215
+[v _ISR ISR `II(v  1 e 1 0 ]
+[s S217 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"99 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[s S225 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S229 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S233 . 1 `S217 1 . 1 0 `S225 1 . 1 0 `S229 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES233  1 e 1 @3 ]
+"216
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S254 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S263 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S268 . 1 `S254 1 . 1 0 `S263 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES268  1 e 1 @11 ]
 "634
 [v _TMR1 TMR1 `VEus  1 e 2 @14 ]
-"964
-[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
-"1059
-[v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "1066
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
 "1375
@@ -63,40 +112,64 @@
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
 "1499
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
-"1999
-[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
 "2080
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2288
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2295
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2316
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+[s S197 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2331
+[u S204 . 1 `S197 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES204  1 e 1 @396 ]
+"2361
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
 "2569
 [v _GIE GIE `VEb  1 e 0 @95 ]
 "2599
 [v _INTE INTE `VEb  1 e 0 @92 ]
 "2602
 [v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2605
+[v _INTF INTF `VEb  1 e 0 @89 ]
 "2629
 [v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2674
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
 "2677
 [v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2680
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2683
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"2689
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"2692
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
 "2695
 [v _RB7 RB7 `VEb  1 e 0 @55 ]
-"2698
-[v _RBIE RBIE `VEb  1 e 0 @91 ]
 "2704
 [v _RC0 RC0 `VEb  1 e 0 @56 ]
 "2710
 [v _RC2 RC2 `VEb  1 e 0 @58 ]
 "2719
 [v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2740
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
 "2743
 [v _RCIF RCIF `VEb  1 e 0 @101 ]
-"2749
-[v _RD0 RD0 `VEb  1 e 0 @64 ]
-"2752
-[v _RD1 RD1 `VEb  1 e 0 @65 ]
-"2755
-[v _RD2 RD2 `VEb  1 e 0 @66 ]
-"2758
-[v _RD3 RD3 `VEb  1 e 0 @67 ]
 "2761
 [v _RD4 RD4 `VEb  1 e 0 @68 ]
 "2764
@@ -105,6 +178,10 @@
 [v _RD6 RD6 `VEb  1 e 0 @70 ]
 "2770
 [v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
 "2857
 [v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
 "2860
@@ -121,85 +198,201 @@
 [v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
 "2920
 [v _TRISA1 TRISA1 `VEb  1 e 0 @1065 ]
-"3037
-[v _TXIF TXIF `VEb  1 e 0 @100 ]
-"50 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"44 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+[v _counter counter `ui  1 e 2 0 ]
+"45
+[v _parkingTime parkingTime `ui  1 e 2 0 ]
+"46
+[v _park park `ui  1 e 2 0 ]
+"47
 [v _numberID numberID `ui  1 e 2 0 ]
-"123
+"48
+[v _lock lock `ui  1 e 2 0 ]
+"57
+[v _isOpened isOpened `ui  1 e 2 0 ]
+"127
 [v _main main `(v  1 e 1 0 ]
 {
-"195
-[v main@i_168 i `i  1 a 2 12 ]
-"142
-[v main@id id `[12]uc  1 a 12 0 ]
-"207
+"146
+[v main@id id `[12]uc  1 a 12 49 ]
+"145
+[v main@i i `i  1 a 2 61 ]
+"186
 } 0
-"93
+"91
 [v _timerInit timerInit `(v  1 e 1 0 ]
 {
-"109
-} 0
-"251
-[v _ser_int ser_int `(v  1 e 1 0 ]
-{
-"256
-} 0
-"264
-[v _rx rx `(uc  1 e 1 0 ]
-{
-"268
-} 0
-"105 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
-[v _Lcd8_Write_String Lcd8_Write_String `(v  1 e 1 0 ]
-{
-[v Lcd8_Write_String@a a `*.24uc  1 a 1 wreg ]
 "107
-[v Lcd8_Write_String@i i `i  1 a 2 4 ]
-"105
-[v Lcd8_Write_String@a a `*.24uc  1 a 1 wreg ]
-"108
-[v Lcd8_Write_String@a a `*.24uc  1 a 1 6 ]
+} 0
 "110
-} 0
-"96
-[v _Lcd8_Write_Char Lcd8_Write_Char `(v  1 e 1 0 ]
+[v _checkGateStatus checkGateStatus `(v  1 e 1 0 ]
 {
-[v Lcd8_Write_Char@a a `uc  1 a 1 wreg ]
-[v Lcd8_Write_Char@a a `uc  1 a 1 wreg ]
-"98
-[v Lcd8_Write_Char@a a `uc  1 a 1 3 ]
-"103
+"121
+[v checkGateStatus@string string `[20]uc  1 a 20 28 ]
+"125
 } 0
-"70
-[v _Lcd8_Set_Cursor Lcd8_Set_Cursor `(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\itoa.c
+[v _itoa itoa `(*.39uc  1 e 1 0 ]
 {
-[v Lcd8_Set_Cursor@a a `uc  1 a 1 wreg ]
-[v Lcd8_Set_Cursor@a a `uc  1 a 1 wreg ]
-[v Lcd8_Set_Cursor@b b `uc  1 p 1 4 ]
-"72
-[v Lcd8_Set_Cursor@a a `uc  1 a 1 5 ]
-"76
-} 0
-"78
-[v _Lcd8_Init Lcd8_Init `(v  1 e 1 0 ]
-{
-"94
-} 0
-"56
-[v _Lcd8_Cmd Lcd8_Cmd `(v  1 e 1 0 ]
-{
-[v Lcd8_Cmd@a a `uc  1 a 1 wreg ]
-[v Lcd8_Cmd@a a `uc  1 a 1 wreg ]
-"58
-[v Lcd8_Cmd@a a `uc  1 a 1 3 ]
-"63
-} 0
+[v itoa@buf buf `*.39uc  1 p 2 18 ]
+[v itoa@val val `i  1 p 2 20 ]
+[v itoa@base base `i  1 p 2 22 ]
 "14
-[v _Lcd8_Port Lcd8_Port `(v  1 e 1 0 ]
+} 0
+"17
+[v _utoa utoa `(*.39uc  1 e 1 0 ]
 {
-[v Lcd8_Port@a a `uc  1 a 1 wreg ]
-[v Lcd8_Port@a a `uc  1 a 1 wreg ]
+"19
+[v utoa@v v `ui  1 a 2 15 ]
+"20
+[v utoa@c c `uc  1 a 1 17 ]
+"17
+[v utoa@buf buf `*.39uc  1 p 2 8 ]
+[v utoa@val val `ui  1 p 2 10 ]
+[v utoa@base base `i  1 p 2 12 ]
+"37
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"218 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+[v _Lcd4_Write_String Lcd4_Write_String `(v  1 e 1 0 ]
+{
+"220
+[v Lcd4_Write_String@i i `i  1 a 2 8 ]
+"218
+[v Lcd4_Write_String@a a `*.26uc  1 p 2 6 ]
+"223
+} 0
+"202
+[v _Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd4_Write_Char@a a `uc  1 a 1 wreg ]
+"204
+[v Lcd4_Write_Char@y y `uc  1 a 1 4 ]
+[v Lcd4_Write_Char@temp temp `uc  1 a 1 3 ]
+"202
+[v Lcd4_Write_Char@a a `uc  1 a 1 wreg ]
+"205
+[v Lcd4_Write_Char@a a `uc  1 a 1 5 ]
+"216
+} 0
+"162
+[v _Lcd4_Set_Cursor Lcd4_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd4_Set_Cursor@a a `uc  1 a 1 wreg ]
+"164
+[v Lcd4_Set_Cursor@y y `uc  1 a 1 10 ]
+[v Lcd4_Set_Cursor@z z `uc  1 a 1 9 ]
+[v Lcd4_Set_Cursor@temp temp `uc  1 a 1 8 ]
+"162
+[v Lcd4_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd4_Set_Cursor@b b `uc  1 p 1 4 ]
+"165
+[v Lcd4_Set_Cursor@a a `uc  1 a 1 7 ]
+"181
+} 0
+"19 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/uart.h
+[v _UART_Receive UART_Receive `(uc  1 e 1 0 ]
+{
+"23
+} 0
+"1
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
 "16
-[v Lcd8_Port@a a `uc  1 a 1 0 ]
-"55
+} 0
+"202 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+[v _Rotation90 Rotation90 `(v  1 e 1 0 ]
+{
+"204
+[v Rotation90@i i `ui  1 a 2 2 ]
+"213
+} 0
+"189
+[v _Rotation0 Rotation0 `(v  1 e 1 0 ]
+{
+"191
+[v Rotation0@i i `ui  1 a 2 2 ]
+"200
+} 0
+"64
+[v _RFID_init RFID_init `(v  1 e 1 0 ]
+{
+"66
+} 0
+"59
+[v _addNewID addNewID `(v  1 e 1 0 ]
+{
+[v addNewID@newID newID `*.24uc  1 a 1 wreg ]
+[v addNewID@newID newID `*.24uc  1 a 1 wreg ]
+[v addNewID@newID newID `*.24uc  1 a 1 4 ]
+"62
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 0 ]
+[v eeprom_write@addr addr `uc  1 a 1 2 ]
+"9
+} 0
+"183 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X/lcd.h
+[v _Lcd4_Init Lcd4_Init `(v  1 e 1 0 ]
+{
+"200
+} 0
+"147
+[v _Lcd4_Cmd Lcd4_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd4_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd4_Cmd@a a `uc  1 a 1 wreg ]
+"149
+[v Lcd4_Cmd@a a `uc  1 a 1 3 ]
+"154
+} 0
+"125
+[v _Lcd4_Port Lcd4_Port `(v  1 e 1 0 ]
+{
+[v Lcd4_Port@a a `uc  1 a 1 wreg ]
+[v Lcd4_Port@a a `uc  1 a 1 wreg ]
+"127
+[v Lcd4_Port@a a `uc  1 a 1 0 ]
+"146
+} 0
+"215 C:\Users\doank\MPLABXProjects\tuan5\parking-car\parkingCar.X\parkingCar.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"229
+} 0
+"202
+[v i1_Rotation90 Rotation90 `(v  1 e 1 0 ]
+{
+"204
+[v i1Rotation90@i i `ui  1 a 2 2 ]
+"213
 } 0
