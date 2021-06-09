@@ -3,10 +3,10 @@
 
 
 #ifndef D0
-#define D0 RB0
-#define D1 RB1
-#define D2 RB2
-#define D3 RB3
+#define D0 RD0
+#define D1 RD1
+#define D2 RD2
+#define D3 RD3
 #endif
 
 

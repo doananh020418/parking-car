@@ -1,7 +1,7 @@
 void UART_Init(){
     // Baud rate configuration
     BRGH = 1;
-    SPBRG = 25;
+    SPBRG = 103;
     // Enable Asynchronous Serial Port
     SYNC = 0;
     SPEN = 1;

@@ -2082,7 +2082,7 @@ extern char * ftoa(float f, int * status);
 void UART_Init(){
 
     BRGH = 1;
-    SPBRG = 25;
+    SPBRG = 103;
 
     SYNC = 0;
     SPEN = 1;
@@ -2103,30 +2103,30 @@ uint8_t UART_Receive(){
     return(RCREG);
 }
 # 14 "parkingCar.c" 2
-# 31 "parkingCar.c"
+# 34 "parkingCar.c"
 # 1 "./lcd.h" 1
 # 14 "./lcd.h"
 void Lcd8_Port(char a)
 {
  if(a & 1)
-  RB0 = 1;
+  RD0 = 1;
  else
-  RB0 = 0;
+  RD0 = 0;
 
  if(a & 2)
-  RB1 = 1;
+  RD1 = 1;
  else
-  RB1 = 0;
+  RD1 = 0;
 
  if(a & 4)
-  RB2 = 1;
+  RD2 = 1;
  else
-  RB2 = 0;
+  RD2 = 0;
 
  if(a & 8)
-  RB3 = 1;
+  RD3 = 1;
  else
-  RB3 = 0;
+  RD3 = 0;
 
  if(a & 16)
   RD4 = 1;
@@ -2328,7 +2328,7 @@ void Lcd4_Shift_Left()
  Lcd4_Cmd(0x01);
  Lcd4_Cmd(0x08);
 }
-# 31 "parkingCar.c" 2
+# 34 "parkingCar.c" 2
 
 
 #pragma config FOSC = HS
@@ -2340,20 +2340,41 @@ void Lcd4_Shift_Left()
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
-unsigned int adc();
-unsigned int adc1();
+
 unsigned int counter = 0;
 unsigned int parkingTime = 0;
-unsigned int park = 100;
+int park = 99;
 unsigned int numberID = 0;
 unsigned int lock = 0;
 
 void Rotation0();
 void Rotation90();
-void ser_int();
-void tx(unsigned char);
-unsigned char rx();
-void txstr(unsigned char *);
+int toa(int value,char *ptr)
+     {
+        int count=0,temp;
+        if(ptr==(0))
+            return 0;
+        if(value==0)
+        {
+            *ptr='0';
+            return 1;
+        }
+
+        if(value<0)
+        {
+            value*=(-1);
+            *ptr++='-';
+            count++;
+        }
+        for(temp=value;temp>0;temp/=10,ptr++);
+        *ptr='\0';
+        for(temp=value;temp>0;temp/=10)
+        {
+            *--ptr=temp%10+'0';
+            count++;
+        }
+        return count;
+     }
 
 unsigned int isOpened = 0;
 
@@ -2381,7 +2402,7 @@ unsigned int checkID(unsigned char id[12]) {
     return 0;
 }
 
-unsigned int checkID2(unsigned char id[12], unsigned availableID[12]) {
+unsigned int checkID2(unsigned char id[12], unsigned char availableID[12]) {
 
     if (strcmp(availableID, id) == 0) {
         return 1;
@@ -2399,7 +2420,7 @@ void timerInit() {
 
     TMR1 = 0;
 
-    TMR1CS = 1;
+    TMR1CS = 0;
 
     T1CKPS0 = 0;
     T1CKPS1 = 0;
@@ -2407,57 +2428,51 @@ void timerInit() {
     TMR1ON = 1;
 }
 
-
 void checkGateStatus() {
-    Lcd4_Set_Cursor(2, 0);
-    if (isOpened == 1) {
-        Lcd4_Write_String("Opened");
-    } else {
-        Lcd4_Write_String("Closed");
-    }
     if (lock ==1){
-        Lcd4_Set_Cursor(2, 0);
-        Lcd4_Write_String("Lock!!!");
+        Lcd8_Set_Cursor(2, 0);
+        Lcd8_Write_String("Lock!!!");
+    }
+    else{
+        Lcd8_Set_Cursor(2, 0);
+        if (isOpened == 1) {
+            Lcd8_Write_String("Opened!");
+        } else {
+            Lcd8_Write_String("Closed!");
+        }
     }
     char string[20];
-    itoa(park,string,10);
-    Lcd4_Set_Cursor(2, 10);
-    Lcd4_Write_String(park);
+    toa(park,string);
+    Lcd8_Set_Cursor(2, 10);
+    Lcd8_Write_String(string);
 }
 
 void main() {
     timerInit();
-    RFID_init();
-    UART_Init(9600);
+
+
     INTEDG = 1;
     INTE = 1;
-    TRISB = 0b11110001;
+    TRISB = 0b11111101;
     PORTB = 0x00;
     TRISC = 0b11000000;
     RB7 = 1;
     TRISC6=TRISC7=1;
 
-    TRISD = 0;
-    TRISA0 = 1;
-    TRISA1 = 1;
-    Lcd4_Init();
-    RC5 = 0;
+    TRISD = 0x00;
+
+    Lcd8_Init();
+
 
     int i;
-    unsigned char id[12];
+    unsigned char id[13];
 
-
-    Lcd4_Set_Cursor(1, 0);
-    Lcd4_Write_String("Wellcome!");
+    Lcd8_Set_Cursor(1, 0);
+    Lcd8_Write_String("Wellcome!");
 
     while (1) {
-
-       checkGateStatus();
-                if(RB6==1){
-                    for(i=0; i<12; i++) {
-                        id[i]=0;
-                        id[i]=UART_Receive();
-                    }
+        checkGateStatus();
+                if(RB3==1){
 
                     if(1){
                         if (isOpened == 0 && lock == 0){
@@ -2465,18 +2480,15 @@ void main() {
                             parkingTime = 0;
 
                         }
-                        if(parkingTime > 20 && RB5 == 0){
+                        if(parkingTime > 15 && RB4 == 0){
 
                                 Rotation0();
                                 lock = 1;
                             }
                     }
                 }
-
-                if(RB5==1){
-
-                    if (RB6==0){
-
+                if(RB4==1){
+                    if (RB3==0){
                         if(isOpened == 1){
                             Rotation0();
                             park--;
@@ -2485,7 +2497,6 @@ void main() {
                 }
     }
 }
-
 
 void Rotation0()
 {
@@ -2517,11 +2528,12 @@ void __attribute__((picinterrupt(("")))) ISR(void){
         if(INTF == 1) {
             Rotation90();
             lock = 0;
+            parkingTime = 0;
             INTF = 0;
         }
         if(TMR1IF == 1){
             counter ++;
-            if(counter == 75*1){
+            if(counter == 61*1){
                 parkingTime ++;
                 counter=0;
             }
