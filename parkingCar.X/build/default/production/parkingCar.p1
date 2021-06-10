@@ -121,19 +121,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1499
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1499: extern volatile unsigned char TRISD __attribute__((address(0x088)));
 [v _TRISD `Vuc ~T0 @X0 0 e@136 ]
-"2683
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2683: extern volatile __bit RB3 __attribute__((address(0x33)));
-[v _RB3 `Vb ~T0 @X0 0 e@51 ]
-"53 parkingCar.c
-[; ;parkingCar.c: 53: unsigned int checkID(unsigned char id[12]) {
+"46 parkingCar.c
+[; ;parkingCar.c: 46: }
+[v _adc `(ui ~T0 @X0 0 e? ]
+"55
+[; ;parkingCar.c: 55:     for (int i = 0; i < numberID; i++) {
 [v _Rotation90 `(v ~T0 @X0 0 e? ]
 "2686 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2686: extern volatile __bit RB4 __attribute__((address(0x34)));
 [v _RB4 `Vb ~T0 @X0 0 e@52 ]
-"52 parkingCar.c
-[; ;parkingCar.c: 52: 
+"54 parkingCar.c
+[; ;parkingCar.c: 54: unsigned int checkID(unsigned char id[12]) {
 [v _Rotation0 `(v ~T0 @X0 0 e? ]
-"2677 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+"2689 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2689: extern volatile __bit RB5 __attribute__((address(0x35)));
+[v _RB5 `Vb ~T0 @X0 0 e@53 ]
+"2680
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2680: extern volatile __bit RB2 __attribute__((address(0x32)));
+[v _RB2 `Vb ~T0 @X0 0 e@50 ]
+"2677
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2677: extern volatile __bit RB1 __attribute__((address(0x31)));
 [v _RB1 `Vb ~T0 @X0 0 e@49 ]
 [t ~ __interrupt . k ]
@@ -141,6 +147,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2605
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2605: extern volatile __bit INTF __attribute__((address(0x59)));
 [v _INTF `Vb ~T0 @X0 0 e@89 ]
+"2229
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2229: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"1159
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1159: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2578
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2578: extern volatile __bit GO_nDONE __attribute__((address(0xFA)));
+[v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
+"1152
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1152: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2222
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2222: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -1112,125 +1133,128 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./lcd.h: 235: }
 [e :UE 160 ]
 }
-"36 parkingCar.c
-[; ;parkingCar.c: 36: unsigned int isOpened = 0;
+"37 parkingCar.c
+[; ;parkingCar.c: 37: unsigned int isOpened = 0;
 [p x FOSC  =  HS         ]
-"37
-[; ;parkingCar.c: 37: 
-[p x WDTE  =  OFF        ]
 "38
-[; ;parkingCar.c: 38: void addNewID(unsigned char newID[12]) {
-[p x PWRTE  =  ON       ]
+[; ;parkingCar.c: 38: 
+[p x WDTE  =  OFF        ]
 "39
-[; ;parkingCar.c: 39:     eeprom_write(numberID, newID);
-[p x BOREN  =  ON        ]
+[; ;parkingCar.c: 39: void addNewID(unsigned char newID[12]) {
+[p x PWRTE  =  ON       ]
 "40
-[; ;parkingCar.c: 40:     numberID++;
-[p x LVP  =  OFF          ]
+[; ;parkingCar.c: 40:     eeprom_write(numberID, newID);
+[p x BOREN  =  ON        ]
 "41
-[; ;parkingCar.c: 41: }
-[p x CPD  =  OFF         ]
+[; ;parkingCar.c: 41:     numberID++;
+[p x LVP  =  OFF          ]
 "42
-[; ;parkingCar.c: 42: 
-[p x WRT  =  OFF         ]
+[; ;parkingCar.c: 42: }
+[p x CPD  =  OFF         ]
 "43
-[; ;parkingCar.c: 43: void RFID_init() {
+[; ;parkingCar.c: 43: 
+[p x WRT  =  OFF         ]
+"44
+[; ;parkingCar.c: 44: void RFID_init() {
 [p x CP  =  OFF          ]
-"46
-[; ;parkingCar.c: 46: 
+"47
+[; ;parkingCar.c: 47: 
+[v _val `ui ~T0 @X0 1 e ]
+"48
+[; ;parkingCar.c: 48: 
 [v _counter `ui ~T0 @X0 1 e ]
 [i _counter
 -> -> 0 `i `ui
 ]
-"47
-[; ;parkingCar.c: 47: 
+"49
+[; ;parkingCar.c: 49: 
 [v _parkingTime `ui ~T0 @X0 1 e ]
 [i _parkingTime
 -> -> 0 `i `ui
 ]
-"48
-[; ;parkingCar.c: 48: 
+"50
+[; ;parkingCar.c: 50: 
 [v _park `i ~T0 @X0 1 e ]
 [i _park
 -> 99 `i
 ]
-"49
-[; ;parkingCar.c: 49: 
+"51
+[; ;parkingCar.c: 51: 
 [v _numberID `ui ~T0 @X0 1 e ]
 [i _numberID
 -> -> 0 `i `ui
 ]
-"50
-[; ;parkingCar.c: 50: 
+"52
+[; ;parkingCar.c: 52: 
 [v _lock `ui ~T0 @X0 1 e ]
 [i _lock
 -> -> 0 `i `ui
 ]
-"54
-[; ;parkingCar.c: 54:     for (int i = 0; i < numberID; i++) {
+"56
+[; ;parkingCar.c: 56:         if (strcmp((unsigned char) eeprom_read(i), id) == 0) {
 [v _toa `(i ~T0 @X0 1 ef2`i`*uc ]
-"55
-[; ;parkingCar.c: 55:         if (strcmp((unsigned char) eeprom_read(i), id) == 0) {
+"57
+[; ;parkingCar.c: 57:             return 1;
 {
 [e :U _toa ]
-"54
-[; ;parkingCar.c: 54:     for (int i = 0; i < numberID; i++) {
+"56
+[; ;parkingCar.c: 56:         if (strcmp((unsigned char) eeprom_read(i), id) == 0) {
 [v _value `i ~T0 @X0 1 r1 ]
 [v _ptr `*uc ~T0 @X0 1 r2 ]
-"55
-[; ;parkingCar.c: 55:         if (strcmp((unsigned char) eeprom_read(i), id) == 0) {
+"57
+[; ;parkingCar.c: 57:             return 1;
 [f ]
-"56
-[; ;parkingCar.c: 56:             return 1;
+"58
+[; ;parkingCar.c: 58:         }
 [v _count `i ~T0 @X0 1 a ]
 [e = _count -> 0 `i ]
 [v _temp `i ~T0 @X0 1 a ]
-"57
-[; ;parkingCar.c: 57:         }
+"59
+[; ;parkingCar.c: 59:     }
 [e $ ! == _ptr -> -> 0 `i `*uc 162  ]
-"58
-[; ;parkingCar.c: 58:     }
+"60
+[; ;parkingCar.c: 60:     return 0;
 [e ) -> 0 `i ]
 [e $UE 161  ]
 [e :U 162 ]
-"59
-[; ;parkingCar.c: 59:     return 0;
-[e $ ! == _value -> 0 `i 163  ]
-"60
-[; ;parkingCar.c: 60: }
-{
 "61
-[; ;parkingCar.c: 61: 
-[e = *U _ptr -> -> 48 `ui `uc ]
+[; ;parkingCar.c: 61: }
+[e $ ! == _value -> 0 `i 163  ]
 "62
-[; ;parkingCar.c: 62: unsigned int checkID2(unsigned char id[12], unsigned char availableID[12]) {
+[; ;parkingCar.c: 62: 
+{
+"63
+[; ;parkingCar.c: 63: unsigned int checkID2(unsigned char id[12], unsigned char availableID[12]) {
+[e = *U _ptr -> -> 48 `ui `uc ]
+"64
+[; ;parkingCar.c: 64: 
 [e ) -> 1 `i ]
 [e $UE 161  ]
-"63
-[; ;parkingCar.c: 63: 
+"65
+[; ;parkingCar.c: 65:     if (strcmp(availableID, id) == 0) {
 }
 [e :U 163 ]
-"65
-[; ;parkingCar.c: 65:         return 1;
-[e $ ! < _value -> 0 `i 164  ]
-"66
-[; ;parkingCar.c: 66:     }
-{
 "67
-[; ;parkingCar.c: 67:     return 0;
-[e =* _value -U -> 1 `i ]
+[; ;parkingCar.c: 67:     }
+[e $ ! < _value -> 0 `i 164  ]
 "68
-[; ;parkingCar.c: 68: }
-[e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> -> 45 `ui `uc ]
+[; ;parkingCar.c: 68:     return 0;
+{
 "69
-[; ;parkingCar.c: 69: 
-[e ++ _count -> 1 `i ]
+[; ;parkingCar.c: 69: }
+[e =* _value -U -> 1 `i ]
 "70
-[; ;parkingCar.c: 70: void timerInit() {
+[; ;parkingCar.c: 70: 
+[e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> -> 45 `ui `uc ]
+"71
+[; ;parkingCar.c: 71: void timerInit() {
+[e ++ _count -> 1 `i ]
+"72
+[; ;parkingCar.c: 72:     TMR1IE = 1;
 }
 [e :U 164 ]
-"71
-[; ;parkingCar.c: 71:     TMR1IE = 1;
+"73
+[; ;parkingCar.c: 73:     TMR1IF = 0;
 {
 [e = _temp _value ]
 [e $ > _temp -> 0 `i 165  ]
@@ -1240,504 +1264,579 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ > _temp -> 0 `i 165  ]
 [e :U 166 ]
 }
-"72
-[; ;parkingCar.c: 72:     TMR1IF = 0;
+"74
+[; ;parkingCar.c: 74:     PEIE = 1;
 [e = *U _ptr -> -> 0 `ui `uc ]
-"73
-[; ;parkingCar.c: 73:     PEIE = 1;
+"75
+[; ;parkingCar.c: 75:     GIE = 1;
 {
 [e = _temp _value ]
 [e $ > _temp -> 0 `i 168  ]
 [e $U 169  ]
 [e :U 168 ]
-"74
-[; ;parkingCar.c: 74:     GIE = 1;
-{
-"75
-[; ;parkingCar.c: 75: 
-[e = *U =- _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> + -> % _temp -> 10 `i `ui -> 48 `ui `uc ]
 "76
 [; ;parkingCar.c: 76: 
-[e ++ _count -> 1 `i ]
+{
 "77
 [; ;parkingCar.c: 77: 
+[e = *U =- _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> + -> % _temp -> 10 `i `ui -> 48 `ui `uc ]
+"78
+[; ;parkingCar.c: 78: 
+[e ++ _count -> 1 `i ]
+"79
+[; ;parkingCar.c: 79:     TMR1 = 0;
 }
 [e =/ _temp -> 10 `i ]
 [e $ > _temp -> 0 `i 168  ]
 [e :U 169 ]
 }
-"78
-[; ;parkingCar.c: 78:     TMR1 = 0;
+"80
+[; ;parkingCar.c: 80: 
 [e ) _count ]
 [e $UE 161  ]
-"79
-[; ;parkingCar.c: 79: 
+"81
+[; ;parkingCar.c: 81:     TMR1CS = 0;
 [e :UE 161 ]
 }
-"81
-[; ;parkingCar.c: 81: 
+"83
+[; ;parkingCar.c: 83:     T1CKPS0 = 0;
 [v _isOpened `ui ~T0 @X0 1 e ]
 [i _isOpened
 -> -> 0 `i `ui
 ]
-"83
-[; ;parkingCar.c: 83:     T1CKPS1 = 0;
+"85
+[; ;parkingCar.c: 85: 
 [v _addNewID `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _addNewID ]
 [v _newID `*uc ~T0 @X0 1 r1 ]
 [f ]
-"84
-[; ;parkingCar.c: 84: 
-[e ( _eeprom_write (2 , -> _numberID `uc -> _newID `uc ]
-"85
-[; ;parkingCar.c: 85:     TMR1ON = 1;
-[e ++ _numberID -> -> 1 `i `ui ]
 "86
-[; ;parkingCar.c: 86: }
+[; ;parkingCar.c: 86:     TMR1ON = 1;
+[e ( _eeprom_write (2 , -> _numberID `uc -> _newID `uc ]
+"87
+[; ;parkingCar.c: 87: }
+[e ++ _numberID -> -> 1 `i `ui ]
+"88
+[; ;parkingCar.c: 88: 
 [e :UE 171 ]
 }
-"88
-[; ;parkingCar.c: 88: void checkGateStatus() {
+"90
+[; ;parkingCar.c: 90:     if (lock ==1){
 [v _RFID_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _RFID_init ]
 [f ]
-"89
-[; ;parkingCar.c: 89:     if (lock ==1){
+"91
+[; ;parkingCar.c: 91:         Lcd8_Set_Cursor(2, 0);
 [e ( _addNewID (1 :s 1C ]
-"90
-[; ;parkingCar.c: 90:         Lcd8_Set_Cursor(2, 0);
+"92
+[; ;parkingCar.c: 92:         Lcd8_Write_String("Lock!!!");
 [e :UE 172 ]
 }
-"98
-[; ;parkingCar.c: 98:             Lcd8_Write_String("Closed!");
+"100
+[; ;parkingCar.c: 100:         }
 [v _checkID `(ui ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _checkID ]
 [v _id `*uc ~T0 @X0 1 r1 ]
 [f ]
-"99
-[; ;parkingCar.c: 99:         }
+"101
+[; ;parkingCar.c: 101:     }
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 177  ]
 [e :U 174 ]
 {
-"100
-[; ;parkingCar.c: 100:     }
+"102
+[; ;parkingCar.c: 102:     char string[20];
 [e $ ! == ( _strcmp (2 , -> ( _eeprom_read (1 -> _i `uc `*Cuc -> _id `*Cuc -> 0 `i 178  ]
 {
-"101
-[; ;parkingCar.c: 101:     char string[20];
+"103
+[; ;parkingCar.c: 103:     toa(park,string);
 [e ) -> -> 1 `i `ui ]
 [e $UE 173  ]
-"102
-[; ;parkingCar.c: 102:     toa(park,string);
+"104
+[; ;parkingCar.c: 104:     Lcd8_Set_Cursor(2, 10);
 }
 [e :U 178 ]
-"103
-[; ;parkingCar.c: 103:     Lcd8_Set_Cursor(2, 10);
+"105
+[; ;parkingCar.c: 105:     Lcd8_Write_String(string);
 }
 [e ++ _i -> 1 `i ]
 [e :U 177 ]
 [e $ < -> _i `ui _numberID 174  ]
 [e :U 175 ]
 }
-"104
-[; ;parkingCar.c: 104:     Lcd8_Write_String(string);
+"106
+[; ;parkingCar.c: 106: }
 [e ) -> -> 0 `i `ui ]
 [e $UE 173  ]
-"105
-[; ;parkingCar.c: 105: }
+"107
+[; ;parkingCar.c: 107: 
 [e :UE 173 ]
 }
-"107
-[; ;parkingCar.c: 107: void main() {
+"109
+[; ;parkingCar.c: 109:     timerInit();
 [v _checkID2 `(ui ~T0 @X0 1 ef2`*uc`*uc ]
 {
 [e :U _checkID2 ]
 [v _id `*uc ~T0 @X0 1 r1 ]
 [v _availableID `*uc ~T0 @X0 1 r2 ]
 [f ]
-"109
-[; ;parkingCar.c: 109: 
+"111
+[; ;parkingCar.c: 111: 
 [e $ ! == ( _strcmp (2 , -> _availableID `*Cuc -> _id `*Cuc -> 0 `i 180  ]
 {
-"110
-[; ;parkingCar.c: 110: 
+"112
+[; ;parkingCar.c: 112:     INTEDG = 1;
 [e ) -> -> 1 `i `ui ]
 [e $UE 179  ]
-"111
-[; ;parkingCar.c: 111:     INTEDG = 1;
+"113
+[; ;parkingCar.c: 113:     INTE = 1;
 }
 [e :U 180 ]
-"112
-[; ;parkingCar.c: 112:     INTE = 1;
+"114
+[; ;parkingCar.c: 114:     TRISB = 0b11111001;
 [e ) -> -> 0 `i `ui ]
 [e $UE 179  ]
-"113
-[; ;parkingCar.c: 113:     TRISB = 0b11111101;
+"115
+[; ;parkingCar.c: 115:     PORTB = 0x00;
 [e :UE 179 ]
 }
-"115
-[; ;parkingCar.c: 115:     TRISC = 0b11000000;
+"117
+[; ;parkingCar.c: 117:     RB7 = 1;
 [v _timerInit `(v ~T0 @X0 1 ef ]
 {
 [e :U _timerInit ]
 [f ]
-"116
-[; ;parkingCar.c: 116:     RB7 = 1;
-[e = _TMR1IE -> -> 1 `i `b ]
-"117
-[; ;parkingCar.c: 117:     TRISC6=TRISC7=1;
-[e = _TMR1IF -> -> 0 `i `b ]
 "118
-[; ;parkingCar.c: 118: 
-[e = _PEIE -> -> 1 `i `b ]
+[; ;parkingCar.c: 118:     TRISC6=TRISC7=1;
+[e = _TMR1IE -> -> 1 `i `b ]
 "119
-[; ;parkingCar.c: 119:     TRISD = 0x00;
+[; ;parkingCar.c: 119: 
+[e = _TMR1IF -> -> 0 `i `b ]
+"120
+[; ;parkingCar.c: 120:     TRISD = 0x00;
+[e = _PEIE -> -> 1 `i `b ]
+"121
+[; ;parkingCar.c: 121: 
 [e = _GIE -> -> 1 `i `b ]
-"123
-[; ;parkingCar.c: 123: 
-[e = _TMR1 -> -> 0 `i `us ]
 "125
-[; ;parkingCar.c: 125:     unsigned char id[13];
-[e = _TMR1CS -> -> 0 `i `b ]
+[; ;parkingCar.c: 125:     int i;
+[e = _TMR1 -> -> 0 `i `us ]
 "127
-[; ;parkingCar.c: 127:     Lcd8_Set_Cursor(1, 0);
+[; ;parkingCar.c: 127: 
+[e = _TMR1CS -> -> 0 `i `b ]
+"129
+[; ;parkingCar.c: 129:     Lcd8_Write_String("Welcome!");
 [e = _T1CKPS0 -> -> 0 `i `b ]
-"128
-[; ;parkingCar.c: 128:     Lcd8_Write_String("Wellcome!");
-[e = _T1CKPS1 -> -> 0 `i `b ]
 "130
-[; ;parkingCar.c: 130:     while (1) {
+[; ;parkingCar.c: 130: 
+[e = _T1CKPS1 -> -> 0 `i `b ]
+"132
+[; ;parkingCar.c: 132:         val = adc();
 [e = _TMR1ON -> -> 1 `i `b ]
-"131
-[; ;parkingCar.c: 131:         checkGateStatus();
+"133
+[; ;parkingCar.c: 133:         checkGateStatus();
 [e :UE 181 ]
 }
-"133
-[; ;parkingCar.c: 133: 
+"135
+[; ;parkingCar.c: 135: 
 [v _checkGateStatus `(v ~T0 @X0 1 ef ]
 {
 [e :U _checkGateStatus ]
 [f ]
-"134
-[; ;parkingCar.c: 134:                     if(1){
+"136
+[; ;parkingCar.c: 136:                     if(1){
 [e $ ! == _lock -> -> 1 `i `ui 183  ]
 {
-"135
-[; ;parkingCar.c: 135:                         if (isOpened == 0 && lock == 0){
-[e ( _Lcd8_Set_Cursor (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
-"136
-[; ;parkingCar.c: 136:                             Rotation90();
-[e ( _Lcd8_Write_String (1 :s 2C ]
 "137
-[; ;parkingCar.c: 137:                             parkingTime = 0;
+[; ;parkingCar.c: 137:                         if (isOpened == 0 && lock == 0){
+[e ( _Lcd8_Set_Cursor (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"138
+[; ;parkingCar.c: 138:                             Rotation90();
+[e ( _Lcd8_Write_String (1 :s 2C ]
+"139
+[; ;parkingCar.c: 139:                             parkingTime = 0;
 }
 [e $U 184  ]
-"138
-[; ;parkingCar.c: 138: 
+"140
+[; ;parkingCar.c: 140: 
 [e :U 183 ]
 {
-"139
-[; ;parkingCar.c: 139:                         }
+"141
+[; ;parkingCar.c: 141:                         }
 [e ( _Lcd8_Set_Cursor (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
-"140
-[; ;parkingCar.c: 140:                         if(parkingTime > 15 && RB4 == 0){
+"142
+[; ;parkingCar.c: 142:                         if(parkingTime > 15 && RB4 == 0){
 [e $ ! == _isOpened -> -> 1 `i `ui 185  ]
 {
-"141
-[; ;parkingCar.c: 141: 
+"143
+[; ;parkingCar.c: 143: 
 [e ( _Lcd8_Write_String (1 :s 3C ]
-"142
-[; ;parkingCar.c: 142:                                 Rotation0();
+"144
+[; ;parkingCar.c: 144:                                 Rotation0();
 }
 [e $U 186  ]
 [e :U 185 ]
 {
-"143
-[; ;parkingCar.c: 143:                                 lock = 1;
+"145
+[; ;parkingCar.c: 145:                                 lock = 1;
 [e ( _Lcd8_Write_String (1 :s 4C ]
-"144
-[; ;parkingCar.c: 144:                             }
+"146
+[; ;parkingCar.c: 146:                             }
 }
 [e :U 186 ]
-"145
-[; ;parkingCar.c: 145:                     }
+"147
+[; ;parkingCar.c: 147:                     }
 }
 [e :U 184 ]
-"146
-[; ;parkingCar.c: 146:                 }
-[v _string `uc ~T0 @X0 -> 20 `i a ]
-"147
-[; ;parkingCar.c: 147:                 if(RB4==1){
-[e ( _toa (2 , _park &U _string ]
 "148
-[; ;parkingCar.c: 148:                     if (RB3==0){
-[e ( _Lcd8_Set_Cursor (2 , -> -> 2 `i `uc -> -> 10 `i `uc ]
+[; ;parkingCar.c: 148:                 }
+[v _string `uc ~T0 @X0 -> 20 `i a ]
 "149
-[; ;parkingCar.c: 149:                         if(isOpened == 1){
-[e ( _Lcd8_Write_String (1 &U _string ]
+[; ;parkingCar.c: 149:                 if(RB4==1){
+[e ( _toa (2 , _park &U _string ]
 "150
-[; ;parkingCar.c: 150:                             Rotation0();
+[; ;parkingCar.c: 150:                     if (val<150){
+[e ( _Lcd8_Set_Cursor (2 , -> -> 2 `i `uc -> -> 10 `i `uc ]
+"151
+[; ;parkingCar.c: 151:                         if(isOpened == 1){
+[e ( _Lcd8_Write_String (1 &U _string ]
+"152
+[; ;parkingCar.c: 152:                             Rotation0();
 [e :UE 182 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"152
-[; ;parkingCar.c: 152:                         }
+"154
+[; ;parkingCar.c: 154:                         }
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"153
-[; ;parkingCar.c: 153:                     }
+"155
+[; ;parkingCar.c: 155:                     }
 [e ( _timerInit ..  ]
-"156
-[; ;parkingCar.c: 156: }
-[e = _INTEDG -> -> 1 `i `b ]
-"157
-[; ;parkingCar.c: 157: 
-[e = _INTE -> -> 1 `i `b ]
 "158
-[; ;parkingCar.c: 158: void Rotation0()
-[e = _TRISB -> -> 253 `i `uc ]
+[; ;parkingCar.c: 158:         if(RB5 == 1){
+[e = _INTEDG -> -> 1 `i `b ]
 "159
-[; ;parkingCar.c: 159: {
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;parkingCar.c: 159:             RB2 = 1;
+[e = _INTE -> -> 1 `i `b ]
 "160
-[; ;parkingCar.c: 160:     unsigned int i;
-[e = _TRISC -> -> 192 `i `uc ]
+[; ;parkingCar.c: 160:             Lcd8_Write_String("Safe");
+[e = _TRISB -> -> 249 `i `uc ]
 "161
-[; ;parkingCar.c: 161:     for(i=0;i<50;i++)
-[e = _RB7 -> -> 1 `i `b ]
+[; ;parkingCar.c: 161:         }
+[e = _PORTB -> -> 0 `i `uc ]
 "162
-[; ;parkingCar.c: 162:     {
-[e = _TRISC6 -> = _TRISC7 -> -> 1 `i `b `b ]
+[; ;parkingCar.c: 162:         else{
+[e = _TRISC -> -> 192 `i `uc ]
+"163
+[; ;parkingCar.c: 163:             Lcd8_Write_String("Fire");
+[e = _RB7 -> -> 1 `i `b ]
 "164
-[; ;parkingCar.c: 164:         _delay((unsigned long)((900)*(16000000/4000000.0)));
-[e = _TRISD -> -> 0 `i `uc ]
+[; ;parkingCar.c: 164:             RB2 = 0;
+[e = _TRISC6 -> = _TRISC7 -> -> 1 `i `b `b ]
 "166
-[; ;parkingCar.c: 166:         _delay((unsigned long)((19100)*(16000000/4000000.0)));
+[; ;parkingCar.c: 166: 
+[e = _TRISD -> -> 0 `i `uc ]
+"168
+[; ;parkingCar.c: 168: }
 [e ( _Lcd8_Init ..  ]
-"169
-[; ;parkingCar.c: 169: }
+"171
+[; ;parkingCar.c: 171: {
 [v _i `i ~T0 @X0 1 a ]
-"170
-[; ;parkingCar.c: 170: 
-[v _id `uc ~T0 @X0 -> 13 `i a ]
 "172
-[; ;parkingCar.c: 172: {
+[; ;parkingCar.c: 172:     unsigned int i;
+[v _id `uc ~T0 @X0 -> 13 `i a ]
+"174
+[; ;parkingCar.c: 174:     {
 [e ( _Lcd8_Set_Cursor (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"173
-[; ;parkingCar.c: 173:     unsigned int i;
-[e ( _Lcd8_Write_String (1 :s 5C ]
 "175
-[; ;parkingCar.c: 175:     {
+[; ;parkingCar.c: 175:         RB1 = 1;
+[e ( _Lcd8_Write_String (1 :s 5C ]
+"177
+[; ;parkingCar.c: 177:         RB1 = 0;
 [e :U 189 ]
 {
-"176
-[; ;parkingCar.c: 176:         RB1 = 1;
-[e ( _checkGateStatus ..  ]
-"177
-[; ;parkingCar.c: 177:         _delay((unsigned long)((1950)*(16000000/4000000.0)));
-[e $ ! == -> _RB3 `i -> 1 `i 191  ]
-{
+"178
+[; ;parkingCar.c: 178:         _delay((unsigned long)((19100)*(16000000/4000000.0)));
+[e = _val ( _adc ..  ]
 "179
-[; ;parkingCar.c: 179:         _delay((unsigned long)((18050)*(16000000/4000000.0)));
+[; ;parkingCar.c: 179:     }
+[e ( _checkGateStatus ..  ]
+"180
+[; ;parkingCar.c: 180:     isOpened = 0;
+[e $ ! > _val -> -> 150 `i `ui 191  ]
+{
+"182
+[; ;parkingCar.c: 182: 
 [e $ ! != -> 1 `i -> 0 `i 192  ]
 {
-"180
-[; ;parkingCar.c: 180:     }
+"183
+[; ;parkingCar.c: 183: void Rotation90()
 [e $ ! && == _isOpened -> -> 0 `i `ui == _lock -> -> 0 `i `ui 193  ]
 {
-"181
-[; ;parkingCar.c: 181:     isOpened = 1;
-[e ( _Rotation90 ..  ]
-"182
-[; ;parkingCar.c: 182: }
-[e = _parkingTime -> -> 0 `i `ui ]
 "184
-[; ;parkingCar.c: 184: void __attribute__((picinterrupt(("")))) ISR(void){
+[; ;parkingCar.c: 184: {
+[e ( _Rotation90 ..  ]
+"185
+[; ;parkingCar.c: 185:     unsigned int i;
+[e = _parkingTime -> -> 0 `i `ui ]
+"187
+[; ;parkingCar.c: 187:     {
 }
 [e :U 193 ]
-"185
-[; ;parkingCar.c: 185:         if(INTF == 1) {
+"188
+[; ;parkingCar.c: 188:         RB1 = 1;
 [e $ ! && > _parkingTime -> -> 15 `i `ui == -> _RB4 `i -> 0 `i 194  ]
 {
-"187
-[; ;parkingCar.c: 187:             lock = 0;
+"190
+[; ;parkingCar.c: 190:         RB1 = 0;
 [e ( _Rotation0 ..  ]
-"188
-[; ;parkingCar.c: 188:             parkingTime = 0;
+"191
+[; ;parkingCar.c: 191:         _delay((unsigned long)((18050)*(16000000/4000000.0)));
 [e = _lock -> -> 1 `i `ui ]
-"189
-[; ;parkingCar.c: 189:             INTF = 0;
+"192
+[; ;parkingCar.c: 192:     }
 }
 [e :U 194 ]
-"190
-[; ;parkingCar.c: 190:         }
+"193
+[; ;parkingCar.c: 193:     isOpened = 1;
 }
 [e :U 192 ]
-"191
-[; ;parkingCar.c: 191:         if(TMR1IF == 1){
+"194
+[; ;parkingCar.c: 194: }
 }
 [e :U 191 ]
-"192
-[; ;parkingCar.c: 192:             counter ++;
+"195
+[; ;parkingCar.c: 195: 
 [e $ ! == -> _RB4 `i -> 1 `i 195  ]
 {
-"193
-[; ;parkingCar.c: 193:             if(counter == 61*1){
-[e $ ! == -> _RB3 `i -> 0 `i 196  ]
+"196
+[; ;parkingCar.c: 196: void __attribute__((picinterrupt(("")))) ISR(void){
+[e $ ! < _val -> -> 150 `i `ui 196  ]
 {
-"194
-[; ;parkingCar.c: 194:                 parkingTime ++;
+"197
+[; ;parkingCar.c: 197:         if(INTF == 1) {
 [e $ ! == _isOpened -> -> 1 `i `ui 197  ]
 {
-"195
-[; ;parkingCar.c: 195:                 counter=0;
+"198
+[; ;parkingCar.c: 198:             Rotation90();
 [e ( _Rotation0 ..  ]
-"196
-[; ;parkingCar.c: 196:             }
+"199
+[; ;parkingCar.c: 199:             lock = 0;
 [e -- _park -> 1 `i ]
-"197
-[; ;parkingCar.c: 197:             TMR1IF = 0;
+"200
+[; ;parkingCar.c: 200:             parkingTime = 0;
 }
 [e :U 197 ]
-"198
-[; ;parkingCar.c: 198:         }
+"201
+[; ;parkingCar.c: 201:             INTF = 0;
 }
 [e :U 196 ]
-"199
-[; ;parkingCar.c: 199: }
+"202
+[; ;parkingCar.c: 202:         }
 }
 [e :U 195 ]
-"200
+"203
+[; ;parkingCar.c: 203:         if(TMR1IF == 1){
+[e ( _Lcd8_Set_Cursor (2 , -> -> 1 `i `uc -> -> 11 `i `uc ]
+"204
+[; ;parkingCar.c: 204:             counter ++;
+[e $ ! == -> _RB5 `i -> 1 `i 198  ]
+{
+"205
+[; ;parkingCar.c: 205:             if(counter == 61*1){
+[e = _RB2 -> -> 1 `i `b ]
+"206
+[; ;parkingCar.c: 206:                 parkingTime ++;
+[e ( _Lcd8_Write_String (1 :s 6C ]
+"207
+[; ;parkingCar.c: 207:                 counter=0;
+}
+[e $U 199  ]
+"208
+[; ;parkingCar.c: 208:             }
+[e :U 198 ]
+{
+"209
+[; ;parkingCar.c: 209:             TMR1IF = 0;
+[e ( _Lcd8_Write_String (1 :s 7C ]
+"210
+[; ;parkingCar.c: 210:         }
+[e = _RB2 -> -> 0 `i `b ]
+"211
+[; ;parkingCar.c: 211: }
+}
+[e :U 199 ]
+"213
+[; ;parkingCar.c: 213: unsigned int adc()
 }
 [e :U 188 ]
 [e $U 189  ]
 [e :U 190 ]
-"201
+"214
+[; ;parkingCar.c: 214: {
 [e :UE 187 ]
 }
-"203
+"216
+[; ;parkingCar.c: 216: 
 [v _Rotation0 `(v ~T0 @X0 1 ef ]
-"204
+"217
+[; ;parkingCar.c: 217:     ADCON1=0xc0;
 {
 [e :U _Rotation0 ]
 [f ]
-"205
-[v _i `ui ~T0 @X0 1 a ]
-"206
-{
-[e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 50 `i `ui 199  ]
-[e $U 200  ]
-[e :U 199 ]
-"207
-{
-"208
-[e = _RB1 -> -> 1 `i `b ]
-"209
-[e ( __delay (1 -> * -> -> 900 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
-"210
-[e = _RB1 -> -> 0 `i `b ]
-"211
-[e ( __delay (1 -> * -> -> 19100 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
-"212
-}
-[e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 50 `i `ui 199  ]
-[e :U 200 ]
-}
-"213
-[e = _isOpened -> -> 0 `i `ui ]
-"214
-[e :UE 198 ]
-}
-"216
-[v _Rotation90 `(v ~T0 @X0 1 ef ]
-"217
-{
-[e :U _Rotation90 ]
-[f ]
 "218
+[; ;parkingCar.c: 218:     ADCON0=0x85;
 [v _i `ui ~T0 @X0 1 a ]
 "219
+[; ;parkingCar.c: 219:     while(GO_nDONE);
 {
 [e = _i -> -> 0 `i `ui ]
-[e $ < _i -> -> 50 `i `ui 203  ]
-[e $U 204  ]
-[e :U 203 ]
+[e $ < _i -> -> 50 `i `ui 201  ]
+[e $U 202  ]
+[e :U 201 ]
 "220
+[; ;parkingCar.c: 220:     adcval=((ADRESH<<8)|(ADRESL));
 {
 "221
+[; ;parkingCar.c: 221:     adcval=(adcval/3)-1;
 [e = _RB1 -> -> 1 `i `b ]
 "222
-[e ( __delay (1 -> * -> -> 1950 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+[; ;parkingCar.c: 222: 
+[e ( __delay (1 -> * -> -> 900 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
 "223
+[; ;parkingCar.c: 223:     return adcval;
 [e = _RB1 -> -> 0 `i `b ]
 "224
-[e ( __delay (1 -> * -> -> 18050 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+[; ;parkingCar.c: 224: }
+[e ( __delay (1 -> * -> -> 19100 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
 "225
 }
 [e ++ _i -> -> 1 `i `ui ]
-[e $ < _i -> -> 50 `i `ui 203  ]
-[e :U 204 ]
+[e $ < _i -> -> 50 `i `ui 201  ]
+[e :U 202 ]
 }
 "226
-[e = _isOpened -> -> 1 `i `ui ]
+[e = _isOpened -> -> 0 `i `ui ]
 "227
-[e :UE 202 ]
+[e :UE 200 ]
+}
+"229
+[v _Rotation90 `(v ~T0 @X0 1 ef ]
+"230
+{
+[e :U _Rotation90 ]
+[f ]
+"231
+[v _i `ui ~T0 @X0 1 a ]
+"232
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 50 `i `ui 205  ]
+[e $U 206  ]
+[e :U 205 ]
+"233
+{
+"234
+[e = _RB1 -> -> 1 `i `b ]
+"235
+[e ( __delay (1 -> * -> -> 1950 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"236
+[e = _RB1 -> -> 0 `i `b ]
+"237
+[e ( __delay (1 -> * -> -> 18050 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"238
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 50 `i `ui 205  ]
+[e :U 206 ]
+}
+"239
+[e = _isOpened -> -> 1 `i `ui ]
+"240
+[e :UE 204 ]
 }
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-"229
+"242
 [v _ISR `(v ~T1 @X0 1 ef ]
 {
 [e :U _ISR ]
 [f ]
-"230
-[e $ ! == -> _INTF `i -> 1 `i 207  ]
+"243
+[e $ ! == -> _INTF `i -> 1 `i 209  ]
 {
-"231
+"244
 [e ( _Rotation90 ..  ]
-"232
+"245
 [e = _lock -> -> 0 `i `ui ]
-"233
+"246
 [e = _parkingTime -> -> 0 `i `ui ]
-"234
+"247
 [e = _INTF -> -> 0 `i `b ]
-"235
-}
-[e :U 207 ]
-"236
-[e $ ! == -> _TMR1IF `i -> 1 `i 208  ]
-{
-"237
-[e ++ _counter -> -> 1 `i `ui ]
-"238
-[e $ ! == _counter -> * -> 61 `i -> 1 `i `ui 209  ]
-{
-"239
-[e ++ _parkingTime -> -> 1 `i `ui ]
-"240
-[e = _counter -> -> 0 `i `ui ]
-"241
+"248
 }
 [e :U 209 ]
-"242
+"249
+[e $ ! == -> _TMR1IF `i -> 1 `i 210  ]
+{
+"250
+[e ++ _counter -> -> 1 `i `ui ]
+"251
+[e $ ! == _counter -> * -> 61 `i -> 1 `i `ui 211  ]
+{
+"252
+[e ++ _parkingTime -> -> 1 `i `ui ]
+"253
+[e = _counter -> -> 0 `i `ui ]
+"254
+}
+[e :U 211 ]
+"255
 [e = _TMR1IF -> -> 0 `i `b ]
-"243
+"256
 }
-[e :U 208 ]
-"244
-[e :UE 206 ]
+[e :U 210 ]
+"257
+[e :UE 208 ]
 }
+"259
+[v _adc `(ui ~T0 @X0 1 ef ]
+"260
+{
+[e :U _adc ]
+[f ]
+"261
+[v _adcval `ui ~T0 @X0 1 a ]
+"263
+[e = _ADCON1 -> -> 192 `i `uc ]
+"264
+[e = _ADCON0 -> -> 133 `i `uc ]
+"265
+[e $U 213  ]
+[e :U 214 ]
+[e :U 213 ]
+[e $ _GO_nDONE 214  ]
+[e :U 215 ]
+"266
+[e = _adcval -> | << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
+"267
+[e = _adcval - / _adcval -> -> 3 `i `ui -> -> 1 `i `ui ]
+"269
+[e ) _adcval ]
+[e $UE 212  ]
+"270
+[e :UE 212 ]
+}
+[a 7C 70 105 114 101 0 ]
+[a 6C 83 97 102 101 0 ]
 [a 1C 49 49 49 49 49 49 49 49 49 49 49 49 0 ]
-[a 5C 87 101 108 108 99 111 109 101 33 0 ]
+[a 5C 87 101 108 99 111 109 101 33 0 ]
 [a 4C 67 108 111 115 101 100 33 0 ]
 [a 3C 79 112 101 110 101 100 33 0 ]
 [a 2C 76 111 99 107 33 33 33 0 ]

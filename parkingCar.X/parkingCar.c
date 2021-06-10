@@ -15,7 +15,7 @@
 
 #define LDR1 RB3
 #define LDR2 RB4
-
+#define Fire RB5
 #define RS RC0
 #define EN RC2
 
@@ -30,6 +30,7 @@
 
 #define W_LED RC5
 #define servo RB1
+#define buzz RB2
 #define _XTAL_FREQ 16000000
 #include "lcd.h"
 
@@ -42,7 +43,8 @@
 #pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
 #pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
 
-
+unsigned int adc();
+unsigned int val;
 unsigned int counter = 0;
 unsigned int parkingTime = 0; // dung de ghi thoi gian xe do  
 int park = 99;
@@ -155,7 +157,7 @@ void main() {
     //UART_Init();
     INTEDG = 1;
     INTE = 1;
-    TRISB = 0b11111101;
+    TRISB = 0b11111001;
     PORTB = 0x00;
     TRISC = 0b11000000;
     RB7 = 1;
@@ -170,15 +172,16 @@ void main() {
     unsigned char id[13];
 
     Lcd8_Set_Cursor(1, 0);
-    Lcd8_Write_String("Wellcome!");
+    Lcd8_Write_String("Welcome!");
     
     while (1) {
+        val = adc();
         checkGateStatus(); 
-                if(LDR1==1){ //car reach the gate
+                if(val>150){ //car reach the gate
 
                     if(1){
                         if (isOpened == 0 && lock == 0){ // checking if gate is opened
-                            Rotation90(); // open it
+                            Rotation90(); // opene it
                             parkingTime = 0;
                           
                         }
@@ -190,13 +193,23 @@ void main() {
                     }
                 }
                 if(LDR2==1){ //car moved through
-                    if (LDR1==0){
+                    if (val<150){
                         if(isOpened == 1){ // check status of gate, if gate is not closed, close it
                             Rotation0(); // close
                             park--;
                         }
                     }
                 }
+        Lcd8_Set_Cursor(1,11);
+        if(Fire == 1){
+            buzz = 1;
+            Lcd8_Write_String("Safe");
+        }
+        else{
+            Lcd8_Write_String("Fire");
+            buzz = 0;
+        }
+        
     }
 }
 
@@ -243,4 +256,15 @@ void __interrupt() ISR(void){
         }
 }
 
-
+unsigned int adc()
+{
+    unsigned int adcval;
+    
+    ADCON1=0xc0;                    //right justified
+    ADCON0=0x85;                    //adc on, fosc/64
+    while(GO_nDONE);                //wait until conversion is finished
+    adcval=((ADRESH<<8)|(ADRESL));    //store the result
+    adcval=(adcval/3)-1;
+        
+    return adcval;  
+}

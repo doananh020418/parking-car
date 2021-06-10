@@ -2103,7 +2103,7 @@ uint8_t UART_Receive(){
     return(RCREG);
 }
 # 14 "parkingCar.c" 2
-# 34 "parkingCar.c"
+# 35 "parkingCar.c"
 # 1 "./lcd.h" 1
 # 14 "./lcd.h"
 void Lcd8_Port(char a)
@@ -2328,7 +2328,7 @@ void Lcd4_Shift_Left()
  Lcd4_Cmd(0x01);
  Lcd4_Cmd(0x08);
 }
-# 34 "parkingCar.c" 2
+# 35 "parkingCar.c" 2
 
 
 #pragma config FOSC = HS
@@ -2340,7 +2340,8 @@ void Lcd4_Shift_Left()
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
-
+unsigned int adc();
+unsigned int val;
 unsigned int counter = 0;
 unsigned int parkingTime = 0;
 int park = 99;
@@ -2453,7 +2454,7 @@ void main() {
 
     INTEDG = 1;
     INTE = 1;
-    TRISB = 0b11111101;
+    TRISB = 0b11111001;
     PORTB = 0x00;
     TRISC = 0b11000000;
     RB7 = 1;
@@ -2468,11 +2469,12 @@ void main() {
     unsigned char id[13];
 
     Lcd8_Set_Cursor(1, 0);
-    Lcd8_Write_String("Wellcome!");
+    Lcd8_Write_String("Welcome!");
 
     while (1) {
+        val = adc();
         checkGateStatus();
-                if(RB3==1){
+                if(val>150){
 
                     if(1){
                         if (isOpened == 0 && lock == 0){
@@ -2488,13 +2490,23 @@ void main() {
                     }
                 }
                 if(RB4==1){
-                    if (RB3==0){
+                    if (val<150){
                         if(isOpened == 1){
                             Rotation0();
                             park--;
                         }
                     }
                 }
+        Lcd8_Set_Cursor(1,11);
+        if(RB5 == 1){
+            RB2 = 1;
+            Lcd8_Write_String("Safe");
+        }
+        else{
+            Lcd8_Write_String("Fire");
+            RB2 = 0;
+        }
+
     }
 }
 
@@ -2539,4 +2551,17 @@ void __attribute__((picinterrupt(("")))) ISR(void){
             }
             TMR1IF = 0;
         }
+}
+
+unsigned int adc()
+{
+    unsigned int adcval;
+
+    ADCON1=0xc0;
+    ADCON0=0x85;
+    while(GO_nDONE);
+    adcval=((ADRESH<<8)|(ADRESL));
+    adcval=(adcval/3)-1;
+
+    return adcval;
 }
